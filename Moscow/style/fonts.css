@@ -1,0 +1,23 @@
+/* ProximaNova-Black */
+@font-face {
+    font-family: "SegoeUI";
+    src:         url("../fonts/SegoeUIRegular.eot");
+    src:         url("../fonts/SegoeUIRegular.eot?#iefix") format("embedded-opentype"),
+                 url("../fonts/SegoeUI.woff") format("woff"),
+                 url("../fonts/SegoeUI.ttf") format("truetype"),
+                 url("../fonts/SegoeUI.svg") format("svg");
+    font-style:  normal;
+    font-weight: 400;
+}
+
+/* ProximaNova-Extra bold */
+@font-face {
+    font-family: "SegoeUI";
+    src:         url("../fonts/Segoe UI Bold.eot");
+    src:         url("../fonts/Segoe UI Bold.eot?#iefix") format("embedded-opentype"),
+                 url("../fonts/SegoeUI-Bold.woff") format("woff"),
+                 url("../fonts/SegoeUI-Bold.ttf") format("truetype"),
+                 url("../fonts/SegoeUI-Bold.svg") format("svg");
+    font-style:  normal;
+    font-weight: 700;
+}

@@ -2,562 +2,599 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ПроФинСервис</title>
+    <title>Столица Москва</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="style/fonts.css">
+    <link rel="stylesheet" type="text/css" href="style/icons.css">
+    <link rel="stylesheet" type="text/css" href="style/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="style/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 <body>
 <div class="wrap">
-<div class="b-overlay"></div>
-    <div class="b-popup-overlay" data-modal="1">
-<div class="b-popup">
-        <button class="b-close"></button>
-        <h2 class="b-title">Заполните форму</h2>
-        <p class="e-popup-text">
-и мы сможем точно расчитать вашу скидку на понижение тела кредита
-        </p>
-        <form action="submit" class="b-form m-form-white">
-            <div class="b-input-container">
-                <input type="text" class="b-input" placeholder="Ваше ФИО">
-            </div>
-            <div class="b-input-container">
-                <input type="text" name="num" class="b-input" placeholder="Ваш телефон">
-            </div>
-            <div class="b-input-container">
-                <input type="text" class="b-input" placeholder="Сумма задолжности">
-            </div>
-            <div class="b-input-container">
-                <input type="text"  class="b-input" placeholder="Выберите ваш банк">
-            </div>
-            <button type="submit" class="b-button">
-                                <span class="e-button-container">
-                                                                    <span class="t"><span class="c"><span class="e-button-text"><span class="e-button-text">Получить скидку</span></span></span></span>
-                                </span>
-            </button>
-                                <p class="b-under-text">*Ваши контактные данные не будут переданы третьим лицам</p>
-
-        </form>
-    </div>
-    </div>
-    <div class="b-popup-overlay" data-modal="2">
-<div class="b-popup m-popup-sm">
-        <button class="b-close"></button>
-        <h2 class="b-title">Оставьте заявку</h2>
-        <p class="e-popup-text">
-мы свяжемся с вами
-в ближайшее время!
-        </p>
-        <form id="form1" action="send.php" class="b-form m-form-white">
-            <div class="b-input-container">
-                <input type="text" class="b-input" placeholder="Ваше ФИО">
-            </div>
-            <div class="b-input-container">
-                <input type="text" name="num" class="b-input" placeholder="Ваш телефон">
-            </div>
-            <button type="submit" class="b-button m-100">
-                                <span class="e-button-container">
-                                                                    <span class="t"><span class="c"><span class="e-button-text"><span class="e-button-text">Оставить заявку</span></span></span></span>
-                                </span>
-            </button>
-                                <p class="b-under-text">*Ваши контактные данные не будут переданы третьим лицам</p>
-
-        </form>
-    </div>
-    </div>
-
-
-<div class="content">
-    <header class="b-header">
+    <div class="content">
+        <header class="b-header">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="e-header-container">
-                            <div class="e-header-top">
-                                <a href="#" class="b-logo"><img src="img/logo.png" alt=""></a>
-                                <button class="b-button" data-button="2">
-                                        <span class="e-button-container">
-                                            <span class="t"><span class="c"><span class="e-button-text">Бесплатная консультация</span></span></span>
-                                        </span>
-                                </button>
-                            </div>
+                            <button class="b-button-menu js-button-menu">
+                                <span class="e-button-menu-line"></span>
+                            </button>
+                            <ul class="b-nav-list">
+                                <li class="e-nav-item active">
+                                    <a href="index.html">Главная</a>
+                                </li>
+                                <li class="e-nav-item">
+                                    <a href="about.html">О журнале</a>
+                                </li>
+                                <li class="e-nav-item">
+                                    <a href="archive.html">Архив</a>
+                                </li>
+                                <li class="e-nav-item">
+                                    <a href="publication.html">Публикации</a>
+                                </li>
+                                <li class="e-nav-item">
+                                    <a href="special-project.html">Спецпроекты</a>
+                                </li>
+                                <li class="e-nav-item">
+                                    <a href="news-list.html">Новости</a>
+                                </li>
+                                <li class="e-nav-item">
+                                    <a href="contacts.html">Контакты</a>
+                                </li>
+                            </ul>
+                            <a href="index.html" class="b-logo">
+                                <img src="img/logo.png" alt="">
+                            </a>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="b-nav">
-                <div class="container">
-                    <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <ul class="b-nav-list">
-                    <li class="e-nav-item"><a href="#2">Ваши выгоды</a></li>
-                    <li class="e-nav-item"><a href="#3">Наши преимущества</a></li>
-                    <li class="e-nav-item"><a href="#4">Как мы работаем </a></li>
-                    <li class="e-nav-item"><a href="#5">Помощь</a></li>
-                    <li class="e-nav-item"><a href="#6">Партнерам</a></li>
-                    <li class="e-nav-item"><a href="#7">Контакты</a></li>
-                    </ul>
-                    </div>
                     </div>
                 </div>
             </div>
         </header>
-    <section class="b-first b-bg">
-        <span class="e-bg-img-container"><span class="e-bg-img" style="background-image: url('img/bg.png')"></span></span>
+        <section class="b-first b-bg">
+            <span class="e-bg-img-container">
+                <span class="e-bg-img" style="background-image: url('img/bg.png')"></span>
+            </span>
+            <div class="e-first-content">
+                <div class="t">
+                    <div class="c">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-5 col-sm-7 col-xs-12">
+                                    <div class="e-first-left-content">
+                                        <p class="b-text-label">
+                                            Первое издание о социально значимых,
+                                            инновационных проектах и социально
+                                            ответственности бизнеса в России
+                                        </p>
+                                        <h1>
+                                            <span class="b-global-title"><span class="b-letter-red">C</span> <span class="e-global-title-text">вежий выпуск журнала</span></span>
+                                        </h1>
+                                        <p class="e-first-subtitle">Уже на всех главных бизнес-конференциях,
+                                            форумах, выставках российской столицы.</p>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 col-md-7 col-sm-5 col-xs-12">
+                                    <div class="e-first-right-content">
+                                        <div class="b-img">
+                                            <img src="img/mag.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#1" class="b-arrow">
+                    <img src="img/arr.png" alt="">
+                </a>
+            </div>
+        </section>
+        <section id="1" class="b-second">
             <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="e-first-content">
-                        <div class="t">
-                            <div class="c">
-                                <p class="e-first-dark"><span class="m-new-line">Устали выплачивать бешенные проценты по кредиту
-</span><span
-                                        class="m-new-line">и хотите избавиться от долга как можно скорее?</span></p>
-                    <h1>Воспользуйтесь законной возможностью снизить тело кредита <span class="e-attention">в 2-3 раза</span> и освободить залоговое имущество в проблемном банке</h1>
-                    <button class="b-button m-button-big anim" data-button="2">
-                                        <span class="e-button-container">
-                                            <span class="t"><span class="c"><span class="e-button-text">Получить скидку</span></span></span>
+                <div class="row">
+                    <div class="b-banners-zone col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <ul class="b-banners-list">
+                            <li class="e-banners-item m-banners-big">
+                                <a href="" class="b-banner m-banner-h100">
+                                    <span class="e-banner-img">
+                                        <img
+                                                src="img/ban.png" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="e-banners-item">
+                                <a href="" class="b-banner">
+                                    <span class="e-banner-img">
+                                        <img
+                                                src="img/mag1.png" alt="">
+                                    </span>
+                                    <span class="b-label m-blue">
+                                        <span class="t">
+                                            <span
+                                                    class="c">
+                                                <span
+                                                        class="e-label-text">Свежий выпуск</span>
+                                            </span>
                                         </span>
-                                </button>
-                    <p class="b-under-text">Скидка на погошение вашего кредита в любом банке *</p>
-                    <a href="#1" class="b-arrow"><img src="img/arr.png" alt=""></a>
+                                    </span>
+                                    <span class="e-banner-footer">
+                                        <span class="t"><span class="c">
+                                            <span class="e-banner-text">СВЕЖИЙ НОМЕР ЖУРНАЛА
+                                                “СТОЛИЦА МОСКВА”</span>
+                                        </span></span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="e-banners-item">
+                                <a href="" class="b-banner">
+                                    <span class="e-banner-img">
+                                        <img
+                                                src="img/mag2.png" alt="">
+                                    </span>
+                                    <span class="b-label">
+                                        <span class="t">
+                                            <span
+                                                    class="c">
+                                                <span
+                                                        class="e-label-text">новости</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span class="e-banner-footer">
+                                        <span class="t"><span class="c">
+                                            <span class="e-banner-text">СВЕЖИЙ НОМЕР ЖУРНАЛА
+                                                “СТОЛИЦА МОСКВА”</span>
+                                        </span></span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="e-banners-item">
+                                <a href="" class="b-banner">
+                                    <span class="e-banner-img">
+                                        <img
+                                                src="img/mag2.png" alt="">
+                                    </span>
+                                    <span class="b-label">
+                                        <span class="t">
+                                            <span
+                                                    class="c">
+                                                <span
+                                                        class="e-label-text">новости</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span class="e-banner-footer">
+                                        <span class="t"><span class="c">
+                                            <span class="e-banner-text m-banner-text-sm">21-22 ноября 2016 года в Москве
+                                                состоится масштабное бизнес-
+                                                событие — SYNERGY GLOBAL FORUM.</span>
+                                        </span></span>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="e-banners-item m-banners-big">
+                                <a href="" class="b-banner m-banner-h100">
+                                    <span class="e-banner-img">
+                                        <img
+                                                src="img/ban.png" alt="">
+                                    </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="b-left-panel col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                        <h2 class="b-title">
+                            <span class="b-icon-container">
+                                <span class="t">
+                                    <span class="c">
+                                        <span class="e-icon"><span class="icon-news"></span></span>
+                                    </span>
+                                </span>
+                            </span>
+                            <span class="e-title-text-container">
+                                <span class="t">
+                                    <span class="c"><span class="e-title-text">Топ публикации</span></span>
+                                </span>
+                            </span>
+                        </h2>
+                        <ul class="b-card-list row">
+                            <li class="e-card-item col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="b-card">
+                                    <span class="b-label">
+                                        <span class="t">
+                                            <span
+                                                    class="c">
+                                                <span
+                                                        class="e-label-text">Культура</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <div class="e-card-img b-bg"><span class="e-bg-img-container">
+                <span class="e-bg-img" style="background-image: url('img/p1.jpg')"></span>
+            </span></div>
+                                    <div class="e-card-footer">
+                                        <div class="e-card-title-container">
+                                            <div class="t">
+                                                <div class="c">
+                                                    <p class="e-card-text">Столица Москва</p>
+                                                </div>
+                                            </div></div>
+                                        <a href="" class="b-card-link">Читать дальше</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="e-card-item col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="b-card">
+                                    <span class="b-label">
+                                        <span class="t">
+                                            <span
+                                                    class="c">
+                                                <span
+                                                        class="e-label-text">Образование</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <div class="e-card-img b-bg"><span class="e-bg-img-container">
+                <span class="e-bg-img" style="background-image: url('img/p2.jpg')"></span>
+            </span></div>
+                                    <div class="e-card-footer">
+                                        <div class="e-card-title-container">
+                                            <div class="t">
+                                                <div class="c">
+                                                    <p class="e-card-text m-card-text-sm">МГТУ им. Баумана: русская инженерная
+                                                        школа и инновационные технологии</p>
+                                                </div>
+                                            </div></div>
+                                        <a href="" class="b-card-link">Читать дальше</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="e-card-item col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="b-card">
+                                    <span class="b-label">
+                                        <span class="t">
+                                            <span
+                                                    class="c">
+                                                <span
+                                                        class="e-label-text">Культура</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <div class="e-card-img b-bg"><span class="e-bg-img-container">
+                <span class="e-bg-img" style="background-image: url('img/p1.jpg')"></span>
+            </span></div>
+                                    <div class="e-card-footer">
+                                        <div class="e-card-title-container">
+                                            <div class="t">
+                                                <div class="c">
+                                                    <p class="e-card-text">Столица Москва</p>
+                                                </div>
+                                            </div></div>
+                                        <a href="" class="b-card-link">Читать дальше</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="e-card-item col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="b-card">
+                                    <span class="b-label">
+                                        <span class="t">
+                                            <span
+                                                    class="c">
+                                                <span
+                                                        class="e-label-text">Культура</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <div class="e-card-img b-bg"><span class="e-bg-img-container">
+                <span class="e-bg-img" style="background-image: url('img/p2.jpg')"></span>
+            </span></div>
+                                    <div class="e-card-footer">
+                                        <div class="e-card-title-container">
+                                            <div class="t">
+                                                <div class="c">
+                                                    <p class="e-card-text">Умение общаться</p>
+                                                </div>
+                                            </div></div>
+                                        <a href="" class="b-card-link">Читать дальше</a>
+                                    </div>
+
+                                </div>
+                            </li>
+                            <li class="e-card-item col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                <div class="b-card">
+                                    <span class="b-label">
+                                        <span class="t">
+                                            <span
+                                                    class="c">
+                                                <span
+                                                        class="e-label-text">Культура</span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <div class="e-card-img b-bg"><span class="e-bg-img-container">
+                <span class="e-bg-img" style="background-image: url('img/p3.jpg')"></span>
+            </span></div>
+                                    <div class="e-card-footer">
+                                        <div class="e-card-title-container">
+                                            <div class="t">
+                                                <div class="c">
+                                                    <p class="e-card-text">Столица Москва</p>
+                                                </div>
+                                            </div></div>
+                                        <a href="" class="b-card-link">Читать дальше</a>
+                                    </div>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="b-right-panel col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                        <h2 class="b-title">
+                            <span class="b-icon-container">
+                                <span class="t">
+                                    <span class="c">
+                                        <span class="e-icon"><span class="icon-calendar"></span></span>
+                                    </span>
+                                </span>
+                            </span>
+                            <span class="e-title-text-container">
+                                <span class="t">
+                                    <span class="c"><span class="e-title-text">Календарь событий</span></span>
+                                </span>
+                            </span>
+                        </h2>
+                        <div class="b-sidebar-container">
+                            <div class="b-month-container swiper-container">
+                                <button class="b-slider-arrow-sm js-meet-prev"><span class="glyphicon glyphicon-triangle-left" aria-hidden="true"></span></button>
+                                <button class="b-slider-arrow-sm m-slider-arrow-next js-meet-next"><span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></span></button>
+                                <ul class="b-month-list swiper-wrapper">
+                                    <li class="e-month-item swiper-slide">
+                                        <p class="e-month-title">Сентябрь</p>
+                                        <ul class="b-link-list">
+                                            <li class="e-link-item">
+                                                <a href="" class="b-sidebar-link">
+                                                    <p class="e-sidebar-link-date" data-swiper-parallax="-100">13-16 сен.</p>
+                                                    <p class="e-sidebar-link-text" data-swiper-parallax="-500">2-Я МЕЖДУНАРОДНАЯ СПЕЦИАЛИЗИРОВАННАЯ ВЫСТАВКА «ИМПОРТОЗАМЕЩЕНИЕ»</p>
+                                                    <p class="e-sidebar-link-link" data-swiper-parallax="-1000">http://www.imzam-expo.ru/import/exhibition/</p>
+                                                </a>
+                                            </li>
+                                            <li class="e-link-item">
+                                                <a href="" class="b-sidebar-link">
+                                                    <p class="e-sidebar-link-date" data-swiper-parallax="-1500">13-16 сен.</p>
+                                                    <p class="e-sidebar-link-text" data-swiper-parallax="-2000">2-Я МЕЖДУНАРОДНАЯ СПЕЦИАЛИЗИРОВАННАЯ ВЫСТАВКА «ИМПОРТОЗАМЕЩЕНИЕ»</p>
+                                                    <p class="e-sidebar-link-link" data-swiper-parallax="-2500">http://www.imzam-expo.ru/import/exhibition/</p>
+                                                </a>
+                                            </li>
+                                            <li class="e-link-item">
+                                                <a href="" class="b-sidebar-link">
+                                                    <p class="e-sidebar-link-date" data-swiper-parallax="-3000">13-16 сен.</p>
+                                                    <p class="e-sidebar-link-text" data-swiper-parallax="-3500">2-Я МЕЖДУНАРОДНАЯ СПЕЦИАЛИЗИРОВАННАЯ ВЫСТАВКА «ИМПОРТОЗАМЕЩЕНИЕ»</p>
+                                                    <p class="e-sidebar-link-link" data-swiper-parallax="-4000">http://www.imzam-expo.ru/import/exhibition/</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="e-month-item swiper-slide">
+                                        <p class="e-month-title">Октябрь</p>
+                                        <ul class="b-link-list">
+                                            <li class="e-link-item">
+                                                <a href="" class="b-sidebar-link">
+                                                    <p class="e-sidebar-link-date" data-swiper-parallax="-100">13-16 сен.</p>
+                                                    <p class="e-sidebar-link-text" data-swiper-parallax="-500">2-Я МЕЖДУНАРОДНАЯ СПЕЦИАЛИЗИРОВАННАЯ ВЫСТАВКА «ИМПОРТОЗАМЕЩЕНИЕ»</p>
+                                                    <p class="e-sidebar-link-link" data-swiper-parallax="-1000">http://www.imzam-expo.ru/import/exhibition/</p>
+                                                </a>
+                                            </li>
+                                            <li class="e-link-item">
+                                                <a href="" class="b-sidebar-link">
+                                                    <p class="e-sidebar-link-date" data-swiper-parallax="-1500">13-16 сен.</p>
+                                                    <p class="e-sidebar-link-text" data-swiper-parallax="-2000">2-Я МЕЖДУНАРОДНАЯ СПЕЦИАЛИЗИРОВАННАЯ ВЫСТАВКА «ИМПОРТОЗАМЕЩЕНИЕ»</p>
+                                                    <p class="e-sidebar-link-link" data-swiper-parallax="-2500">http://www.imzam-expo.ru/import/exhibition/</p>
+                                                </a>
+                                            </li>
+                                            <li class="e-link-item">
+                                                <a href="" class="b-sidebar-link">
+                                                    <p class="e-sidebar-link-date" data-swiper-parallax="-3000">13-16 сен.</p>
+                                                    <p class="e-sidebar-link-text" data-swiper-parallax="-3500">2-Я МЕЖДУНАРОДНАЯ СПЕЦИАЛИЗИРОВАННАЯ ВЫСТАВКА «ИМПОРТОЗАМЕЩЕНИЕ»</p>
+                                                    <p class="e-sidebar-link-link" data-swiper-parallax="-4000">http://www.imzam-expo.ru/import/exhibition/</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="e-month-item swiper-slide">
+                                        <p class="e-month-title">Ноябрь</p>
+                                        <ul class="b-link-list">
+                                            <li class="e-link-item">
+                                                <a href="" class="b-sidebar-link">
+                                                    <p class="e-sidebar-link-date" data-swiper-parallax="-100">13-16 сен.</p>
+                                                    <p class="e-sidebar-link-text" data-swiper-parallax="-500">2-Я МЕЖДУНАРОДНАЯ СПЕЦИАЛИЗИРОВАННАЯ ВЫСТАВКА «ИМПОРТОЗАМЕЩЕНИЕ»</p>
+                                                    <p class="e-sidebar-link-link" data-swiper-parallax="-1000">http://www.imzam-expo.ru/import/exhibition/</p>
+                                                </a>
+                                            </li>
+                                            <li class="e-link-item">
+                                                <a href="" class="b-sidebar-link">
+                                                    <p class="e-sidebar-link-date" data-swiper-parallax="-1500">13-16 сен.</p>
+                                                    <p class="e-sidebar-link-text" data-swiper-parallax="-2000">2-Я МЕЖДУНАРОДНАЯ СПЕЦИАЛИЗИРОВАННАЯ ВЫСТАВКА «ИМПОРТОЗАМЕЩЕНИЕ»</p>
+                                                    <p class="e-sidebar-link-link" data-swiper-parallax="-2500">http://www.imzam-expo.ru/import/exhibition/</p>
+                                                </a>
+                                            </li>
+                                            <li class="e-link-item">
+                                                <a href="" class="b-sidebar-link">
+                                                    <p class="e-sidebar-link-date" data-swiper-parallax="-3000">13-16 сен.</p>
+                                                    <p class="e-sidebar-link-text" data-swiper-parallax="-3500">2-Я МЕЖДУНАРОДНАЯ СПЕЦИАЛИЗИРОВАННАЯ ВЫСТАВКА «ИМПОРТОЗАМЕЩЕНИЕ»</p>
+                                                    <p class="e-sidebar-link-link" data-swiper-parallax="-4000">http://www.imzam-expo.ru/import/exhibition/</p>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <a href="" class="b-card-link">Показать все мероприятия</a>
                             </div>
+                        </div>
+                        <h2 class="b-title">
+                            <span class="b-icon-container">
+                                <span class="t">
+                                    <span class="c">
+                                        <span class="e-icon"><span class="icon-news"></span></span>
+                                    </span>
+                                </span>
+                            </span>
+                            <span class="e-title-text-container">
+                                <span class="t">
+                                    <span class="c"><span class="e-title-text">Новости</span></span>
+                                </span>
+                            </span>
+                        </h2>
+                        <div class="b-sidebar-container">
+                            <div class="b-month-container">
+                                <ul class="b-link-list">
+                                    <li class="e-link-item">
+                                        <a href="" class="b-news-link">
+                                            <p class="e-news-link-title">Паралимпийцам дорогу!</p>
+                                            <p class="e-news-link-text">Легкоатлет Александр Яремчук родился в 1995 году в селе Шангалы Устьянского района Архангельской области. Учится Александр в Московской...</p>
+                                        </a>
+                                    </li>
+                                    <li class="e-link-item">
+                                        <a href="" class="b-news-link">
+                                            <p class="e-news-link-title">SYNERGY GLOBAL FORUM</p>
+                                            <p class="e-news-link-text">21-22 ноября 2016 года в Москве состоится масштабное бизнес-событие — SYNERGY GLOBAL FORUM. 6100 участников Форума... соберутся... в Crocus City Hall, чтобы получить вдохновение и знания от лучших бизнес-спикеров планеты. Приглашаем вас и вашу команду присоединиться…</p>
+                                        </a>
+                                    </li>
+                                    <li class="e-link-item">
+                                        <a href="" class="b-news-link">
+                                            <p class="e-news-link-title">РОССИЯ И КИТАЙ: ПЕРСПЕКТИВЫ СОТРУДНИЧЕСТВА</p>
+                                            <p class="e-news-link-text">5 июля 2016 года состоялся Форум ректороввузов России и Китая в Московском государственном университете имени М.В. Ломоносова...</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <a href="" class="b-card-link m-card-link-blue">Показать все новости</a>
                             </div>
-                </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    <section id="1" class="b-second">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-        <h2 class="b-title">Кому выгодно выкупать кредит
-в банке на стадии ликвидации</h2>
-        <ul class="b-card-list">
-            <li class="e-card-item">
-            <div class="b-card">
-            <div class="e-card-photo b-bg">
-                <span class="e-bg-img-container"><span class="e-bg-img" style="background-image: url('img/p1.png')"></span></span>
-            </div>
-                <p class="e-card-text">Физлицо с кредитом
-на/под недвижимость или автомобиль</p>
-            </div>
-            </li>
-            <li class="e-card-item">
-            <div class="b-card">
-            <div class="e-card-photo b-bg">
-                <span class="e-bg-img-container"><span class="e-bg-img" style="background-image: url('img/p2.png')"></span></span>
-            </div>
-                <p class="e-card-text">Предприниматель среднего и малого бизнеса с кредитом под залог имущества</p>
-            </div>
-            </li>
-            </ul>
-            <h2 id="2" class="b-title">Преимущества выкупа кредитной задолженности</h2>
-                    <ul class="b-icon-list row">
-                        <li class="e-icon-item col-lg-4 col-md-4">
-                        <div class="b-icon-block">
-                        <div class="e-icon-container">
-                        <div class="t">
-                        <div class="c">
-                        <div class="e-icon-img"><img src="img/i1.png" alt=""></div>
                         </div>
-                        </div>
-                        </div>
-                        <p class="e-icon-text">Снижение основного «тела» кредита в несколько раз</p>
-                        </div>
-                        </li>
-                        <li class="e-icon-item col-lg-4 col-md-4">
-                        <div class="b-icon-block">
-                        <div class="e-icon-container">
-                        <div class="t">
-                        <div class="c">
-                        <div class="e-icon-img"><img src="img/i2.png" alt=""></div>
-                        </div>
-                        </div>
-                        </div>
-                        <p class="e-icon-text">Списание штрафных платежей,
-пени и прочих комиссий</p>
-                        </div>
-                        </li>
-                        <li class="e-icon-item col-lg-4 col-md-4">
-                        <div class="b-icon-block">
-                        <div class="e-icon-container">
-                        <div class="t">
-                        <div class="c">
-                        <div class="e-icon-img"><img src="img/i3.png" alt=""></div>
-                        </div>
-                        </div>
-                        </div>
-                        <p class="e-icon-text">Положительная
-кредитная история</p>
-                        </div>
-                        </li>
-                        <li class="e-icon-item col-lg-4 col-md-4">
-                        <div class="b-icon-block">
-                        <div class="e-icon-container">
-                        <div class="t">
-                        <div class="c">
-                        <div class="e-icon-img"><img src="img/i4.png" alt=""></div>
-                        </div>
-                        </div>
-                        </div>
-                        <p class="e-icon-text">Быстрое закрытие вопроса с кредитом</p>
-                        </div>
-                        </li>
-                        <li class="e-icon-item col-lg-4 col-md-4">
-                        <div class="b-icon-block">
-                        <div class="e-icon-container">
-                        <div class="t">
-                        <div class="c">
-                        <div class="e-icon-img"><img src="img/i5.png" alt=""></div>
-                        </div>
-                        </div>
-                        </div>
-                        <p class="e-icon-text">Кредит не попадет в руки коллекторов</p>
-                        </div>
-                        </li>
-                        <li class="e-icon-item col-lg-4 col-md-4">
-                        <div class="b-icon-block">
-                        <div class="e-icon-container">
-                        <div class="t">
-                        <div class="c">
-                        <div class="e-icon-img"><img src="img/i6.png" alt=""></div>
-                        </div>
-                        </div>
-                        </div>
-                        <p class="e-icon-text">Освобождение
-имущества из залога</p>
-                        </div>
-                        </li>
-                        </ul>
-                    <button class="b-button m-button-big anim" data-button="2">
-                                        <span class="e-button-container">
-                                            <span class="t"><span class="c"><span class="e-button-text">Выкупить кредит</span></span></span>
-                                        </span>
-                                </button>
-                    <p class="b-under-text">Выкупить ваш кредит с дисконтом в любом банке *</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="3" class="b-third b-bg">
-        <span class="e-bg-img-container"><span class="e-bg-img" style="background-image: url('img/bg2.png')"></span></span>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-      <h2 class="b-title">Наши преимущества
-и гарантии</h2>
-                    <ul class="b-icon-list row">
-                        <li class="e-icon-item col-lg-4 col-md-4">
-                        <div class="b-icon-block">
-                        <div class="e-icon-container">
-                        <div class="t">
-                        <div class="c">
-                        <div class="e-icon-img"><img src="img/g.png" alt=""></div>
-                        </div>
-                        </div>
-                        </div>
-                        <p class="e-icon-text">Бесплатные консультации
-на весь период сотрудничества</p>
-                        </div>
-                        </li>
-                        <li class="e-icon-item col-lg-4 col-md-4">
-                        <div class="b-icon-block">
-                        <div class="e-icon-container">
-                        <div class="t">
-                        <div class="c">
-                        <div class="e-icon-img"><img src="img/g.png" alt=""></div>
-                        </div>
-                        </div>
-                        </div>
-                        <p class="e-icon-text">Решаем проблемы наших
-клиентов с 2012 года</p>
-                        </div>
-                        </li>
-                        <li class="e-icon-item col-lg-4 col-md-4">
-                        <div class="b-icon-block">
-                        <div class="e-icon-container">
-                        <div class="t">
-                        <div class="c">
-                        <div class="e-icon-img"><img src="img/g.png" alt=""></div>
-                        </div>
-                        </div>
-                        </div>
-                        <p class="e-icon-text">Добиваемся максимальной
-скидки для вас!</p>
-                        </div>
-                        </li>
-                        <li class="e-icon-item col-lg-4 col-md-4">
-                        <div class="b-icon-block">
-                        <div class="e-icon-container">
-                        <div class="t">
-                        <div class="c">
-                        <div class="e-icon-img"><img src="img/g.png" alt=""></div>
-                        </div>
-                        </div>
-                        </div>
-                        <p class="e-icon-text">Гарантируем успешное разрешение проблемы в 8 из 10 случаях</p>
-                        </div>
-                        </li>
-                        <li class="e-icon-item col-lg-4 col-md-4">
-                        <div class="b-icon-block">
-                        <div class="e-icon-container">
-                        <div class="t">
-                        <div class="c">
-                        <div class="e-icon-img"><img src="img/g.png" alt=""></div>
-                        </div>
-                        </div>
-                        </div>
-                        <p class="e-icon-text">Гарантируем 100% возврат авансового платежа, если  не добьемся выкупа</p>
-                        </div>
-                        </li>
-                        <li class="e-icon-item col-lg-4 col-md-4">
-                        <div class="b-icon-block">
-                        <div class="e-icon-container">
-                        <div class="t">
-                        <div class="c">
-                        <div class="e-icon-img"><img src="img/g.png" alt=""></div>
-                        </div>
-                        </div>
-                        </div>
-                        <p class="e-icon-text">Выезжаем напрямую к вам в любое удобное для вас время</p>
-                        </div>
-                        </li>
-                        </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="4" class="b-fourth">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <h2 class="b-title"><span class="m-new-line">Выкупить долг с помощью  </span><span class="m-new-line">ПроФинСервис просто!</span></h2>
-                    <ul class="b-icon-list">
-                        <li class="e-icon-item">
-                        <div class="b-icon-block">
-                        <div class="e-icon-container">
-                        <div class="t">
-                        <div class="c">
-                        <div class="e-icon-img"><img src="img/i7.png" alt=""></div>
-                        </div>
-                        </div>
-                        </div>
-                            <p class="e-icon-title">1. Заявка</p>
-                            <p class="e-icon-text">Вы  оставляете заявку на сайте и мы обсуждаем удобное время и место для встречи</p>
-                        </div>
-                        </li>
-                        <li class="e-icon-item">
-                        <div class="b-icon-block">
-                        <div class="e-icon-container">
-                        <div class="t">
-                        <div class="c">
-                        <div class="e-icon-img"><img src="img/i5.png" alt=""></div>
-                        </div>
-                        </div>
-                        </div>
-                            <p class="e-icon-title">2. Переговоры</p>
-                            <p class="e-icon-text">Проводим предварительные переговоры и оцениваем стоимость вашей задолженности</p>
-                        </div>
-                        </li>
-                        <li class="e-icon-item">
-                        <div class="b-icon-block">
-                        <div class="e-icon-container">
-                        <div class="t">
-                        <div class="c">
-                        <div class="e-icon-img"><img src="img/i4.png" alt=""></div>
-                        </div>
-                        </div>
-                        </div>
-                            <p class="e-icon-title">3. Договор</p>
-                            <p class="e-icon-text">Подписываем предварительный договор, вы оплачиваете аванс, и мы готовимся на выкуп задолженности через биржу, участвуем в торгах и проводим выкуп</p>
-                        </div>
-                        </li>
-                        <li class="e-icon-item">
-                        <div class="b-icon-block">
-                        <div class="e-icon-container">
-                        <div class="t">
-                        <div class="c">
-                        <div class="e-icon-img"><img src="img/i8.png" alt=""></div>
-                        </div>
-                        </div>
-                        </div>
-                            <p class="e-icon-title">4. Расчет</p>
-                            <p class="e-icon-text">Подписываем с банком договора уступки права требования на ваш кредит и залог, проводим окончательный расчет</p>
-                        </div>
-                        </li>
-                        <li class="e-icon-item">
-                        <div class="b-icon-block">
-                        <div class="e-icon-container">
-                        <div class="t">
-                        <div class="c">
-                        <div class="e-icon-img"><img src="img/i9.png" alt=""></div>
-                        </div>
-                        </div>
-                        </div>
-                            <p class="e-icon-title">5. Права</p>
-                            <p class="e-icon-text">Подписываем основной договор уступки права требования на кредит и залог  между нами и доверительным лицом клиента</p>
-                        </div>
-                        </li>
-                        </ul>
-                    <button class="b-button m-button-big anim" data-button="1">
-                                        <span class="e-button-container">
-                                            <span class="t"><span class="c"><span class="e-button-text">Подать заявку</span></span></span>
-                                        </span>
-                                </button>
                     </div>
                 </div>
             </div>
-        <div id="5" class="b-question-block">
+        </section>
+        <section class="b-third">
             <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <h2 class="b-title">Частые вопросы наших клиентов</h2>
-                        <ul class="b-question-list">
-                            <li class="e-question-item">
-                            <div class="b-question">
-                            <p class="e-question-title">За какой минимальный/максимальный срок можно решить вопрос с выкупом кредита?</p>
-                            <p class="e-question-text">Срок выкупа от одного до четырёх месяцев. Это зависит от количества проведённых торгов по конкретному кредиту. Одни  торги в среднем раз в месяц. Мы пытаемся выкупать с первых или вторых, но иногда, для большего снижения стоимости, приходится доходить до 3 и 4 торгов.</p>
+                <div class="row">
+                    <div class="b-slider-block col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h3>Наши партнеры</h3>
+                        <div class="e-slider-content">
+                            <div class="swiper-container js-company">
+                                <ul class="b-company-list swiper-wrapper">
+                                    <li class="e-company-item swiper-slide" data-swiper-autoplay="1500">
+                                        <div class="t">
+                                            <div class="c">
+                                                <a href="" class="e-company-link">
+                                                    <img src="img/s1.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="e-company-item swiper-slide" data-swiper-autoplay="1500">
+                                        <div class="t">
+                                            <div class="c">
+                                                <a href="" class="e-company-link">
+                                                    <img src="img/s2.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="e-company-item swiper-slide" data-swiper-autoplay="1500">
+                                        <div class="t">
+                                            <div class="c">
+                                                <a href="" class="e-company-link">
+                                                    <img src="img/s3.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="e-company-item swiper-slide" data-swiper-autoplay="1500">
+                                        <div class="t">
+                                            <div class="c">
+                                                <a href="" class="e-company-link">
+                                                    <img src="img/s4.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="e-company-item swiper-slide" data-swiper-autoplay="1500">
+                                        <div class="t">
+                                            <div class="c">
+                                                <a href="" class="e-company-link">
+                                                    <img src="img/s5.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="e-company-item swiper-slide" data-swiper-autoplay="1500">
+                                        <div class="t">
+                                            <div class="c">
+                                                <a href="" class="e-company-link">
+                                                    <img src="img/s3.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="e-company-item swiper-slide" data-swiper-autoplay="1500">
+                                        <div class="t">
+                                            <div class="c">
+                                                <a href="" class="e-company-link">
+                                                    <img src="img/s4.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="e-company-item swiper-slide" data-swiper-autoplay="1500">
+                                        <div class="t">
+                                            <div class="c">
+                                                <a href="" class="e-company-link">
+                                                    <img src="img/s5.jpg" alt="">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
-                            </li>
-                            <li class="e-question-item">
-                            <div class="b-question">
-                            <p class="e-question-title">Почему банки продают кредиты должников со скидкой?</p>
-                            <p class="e-question-text">
-Когда банк находится на стадии ликвидации, то все его активы оцениваются по реальной их стоимости. Для банка кредиты есть активом. На стоимость актива влияет качество обслуживание, реальная стоимость залога и т.д. Поэтому, учитывая на балансе кредит с его реальным остатком, банк в лице ликвидатора имеет возможность его продать по стоимости с учётом дисконта. Это делается для того, чтобы повысить ликвидность фин.учреждения и направить ресурсы на погашения долгов перед его вкладчиками в том числе.
-Операция абсолютно законная. Но физлицо или компания напрямую не может выкупить свой долг. Они это могут сделать только через доверенных лиц и через финансовые компании, такие как ПроФинСервис.</p>
-                            </div>
-                            </li>
-                            <li class="e-question-item">
-                            <div class="b-question">
-                            <p class="e-question-title">Что выгоднее реструктуризация долга или его выкуп с дисконтом?</p>
-                            <p class="e-question-text">Реструктуризировать кредит в «проблемном» банке практически невозможно.
-Кроме того реструктуризация не уменьшит клиенту сумму его задолженности и дальше будут начисляться проценты.</p>
-                            </div>
-                            </li>
-                            <li class="e-question-item">
-                            <div class="b-question">
-                            <p class="e-question-title">С какими банками работает ПроФинСервис?</p>
-                            <p class="e-question-text">Работаем со всеми украинскими и российскими банками на стадии ликвидации. С российскими также работаем.</p>
-                            </div>
-                            </li>
-                            <li class="e-question-item">
-                            <div class="b-question">
-                            <p class="e-question-title">Если мой кредит продан коллекторам, вы поможете решить ситуацию?</p>
-                            <p class="e-question-text">Эта ситуация нетипичная и достаточно сложная, но в практике решали и такое. Оставьте заявку — мы проведем для вас консультацию бесплатно!</p>
-                            </div>
-                            </li>
-                            <li class="e-question-item">
-                            <div class="b-question">
-                            <p class="e-question-title">Сколько платежей нужно сделать, чтобы выкупить свой долг у компании?</p>
-                            <p class="e-question-text">Авансовый платёж после подписания предварительного договора в размере 5%-10% от согласованной или предварительной стоимости выкупа;
-20% о стоимости выкупа за несколько дней до торгов;
-оставшаяся сумма на протяжении пяти дней после проведения торгов.</p>
-                            </div>
-                            </li>
-                            <li class="e-question-item">
-                            <div class="b-question">
-                            <p class="e-question-title">Есть ли у вас какие-то штрафы, если я просрочу платежи по договору?</p>
-                            <p class="e-question-text">Если клиент отказывается от выкупа после проведения торгов, то он теряет сумму в размере гарантийного платежа.
-</p>
-                            </div>
-                            </li>
-                            <li class="e-question-item">
-                            <div class="b-question">
-                            <p class="e-question-title">Какие последствия досрочного расторжения договора с компанией?</p>
-                            <p class="e-question-text">Если клиент отказывается от сотрудничества после подписания договора, но до проведения торгов, он теряет авансовый платёж.</p>
-                            </div>
-                            </li>
-                            <li class="e-question-item">
-                            <div class="b-question">
-                            <p class="e-question-title">Если на меня уже подали в суд (или судебные разбирательства уже прошли), вы можете мне помочь?</p>
-                            <p class="e-question-text">Мы берёмся за дело на разных этапах, в т.ч.в период судебных разбирательств, а также в период исполнительного производства.</p>
-                            </div>
-                            </li>
-                            </ul>
+                            <button class="b-slider-arrow js-company-prev"><span class="icon-left"></span></button>
+                            <button class="b-slider-arrow m-slider-arrow-next js-company-next"><span class="icon-right"></span></button>
+                        </div>
+                        <div class="b-button-container">
+                            <button class="b-button">
+                                <span class="e-button-container">
+                                    <span class="t"><span class="c"><span class="e-button-text">Как стать партнером?</span></span></span>
+                                </span>
+                            </button>
+                        </div>
                     </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    <section id="6" class="b-fifth b-bg">
-                 <span class="e-bg-img-container"><span class="e-bg-img" style="background-image: url('img/bg4.png')"></span></span>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <h2 class="b-title">Хотите стать нашим партнером?</h2>
-                    <h3 class="b-subtitle">Мы открыты к сотрудничеству с юристами, адвокатами, финансистами и бывшими сотрудниками банков.<span class="m-new-line">Оставьте заявку — мы свяжемся с вами в ближайшее время</span></h3>
-                    <form action="" class="b-form">
-                        <ul class="b-input-list">
-                            <li class="e-input-item">
-                            <div class="b-input-container"><input type="text" class="b-input" placeholder="Ваш имя"></div>
-                            </li>
-                            <li class="e-input-item">
-                            <div class="b-input-container"><input type="email" class="b-input" placeholder="Ваш телефон"></div>
-                            </li>
-                            <li class="e-input-item">
-                            <button class="b-button m-100 anim">
-                                        <span class="e-button-container">
-                                            <span class="t"><span class="c"><span class="e-button-text">Отправить заявку</span></span></span>
-                                        </span>
-                                </button>
-                            </li>
-                            </ul>
-                    </form>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="7" class="b-sixth">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <h2 class="b-title"><span class="m-new-line">Карта представительств </span><span class="m-new-line">ПроФинСервис по всей Украине</span></h2>
-                    <div class="b-map"><img src="img/map.png" alt="" class="b-map"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <footer class="b-footer">
         <div class="container">
             <div class="row">
-                <div class="e-footer-left col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                    <a href="#" class="b-logo"><img src="img/logo2.png" alt=""></a>
-                </div>
-                <div class="e-footer-right col-lg-8 col-md-8 col-sm-12 col-xs-12">
-                    <ul class="b-button-list">
-                        <li class="e-button-item">
-                           <button class="b-button m-button-dark anim" data-button="1">
-                                        <span class="e-button-container">
-                                            <span class="t"><span class="c"><span class="e-button-text">Стать партнером</span></span></span>
-                                        </span>
-                                </button>
+                <div class="e-footer-container col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <ul class="b-footer-list">
+                        <li class="e-footer-item">
+                            <a href="" class="e-footer-text">2016 © журнал "Столица Москва"</a>
                         </li>
-                        <li class="e-button-item">
-                           <button class="b-button  anim" data-button="2">
-                                        <span class="e-button-container">
-                                            <span class="t"><span class="c"><span class="e-button-text">Бесплатная консультация</span></span></span>
-                                        </span>
-                                </button>
+                        <li class="e-footer-item">
+                            <a href="" class="e-footer-text">Сделано в WoooRed</a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <ul class="b-footer-text-list row">
-                    <li class="col-lg-4 col-md-4"><a href="" class="e-footer-link">© 2015-2016.  Все права защищены</a></li><li
-                    class="col-lg-4 col-md-4"><a href="" class="e-footer-link">Расзработка сайтов landing.ua</a></li><li
-                    class="col-lg-4 col-md-4"><a href="" class="e-footer-link">Политика конфиденциальности</a></li>
-                </ul>
         </div>
     </footer>
-</div>
-
 </div>
 <script src="js/jquery-2.2.3.min.js"></script>
 
 
+<script src="js/swiper.jquery.min.js"></script>
 <script src="js/global.js"></script>
 </body>
 </html>

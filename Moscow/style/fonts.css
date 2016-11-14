@@ -1,23 +1,32 @@
-/* ProximaNova-Black */
+/* HelveticaNeueCyr Bold */
 @font-face {
-    font-family: "SegoeUI";
-    src:         url("../fonts/SegoeUIRegular.eot");
-    src:         url("../fonts/SegoeUIRegular.eot?#iefix") format("embedded-opentype"),
-                 url("../fonts/SegoeUI.woff") format("woff"),
-                 url("../fonts/SegoeUI.ttf") format("truetype"),
-                 url("../fonts/SegoeUI.svg") format("svg");
-    font-style:  normal;
-    font-weight: 400;
-}
-
-/* ProximaNova-Extra bold */
-@font-face {
-    font-family: "SegoeUI";
-    src:         url("../fonts/Segoe UI Bold.eot");
-    src:         url("../fonts/Segoe UI Bold.eot?#iefix") format("embedded-opentype"),
-                 url("../fonts/SegoeUI-Bold.woff") format("woff"),
-                 url("../fonts/SegoeUI-Bold.ttf") format("truetype"),
-                 url("../fonts/SegoeUI-Bold.svg") format("svg");
+    font-family: "Helvetica";
+    src:         url("../fonts/HELVETICANEUECYR-BOLD.eot");
+    src:         url("../fonts/HELVETICANEUECYR-BOLD.eot?#iefix") format("embedded-opentype"),
+                 url("../fonts/HELVETICANEUECYR-BOLD.ttf") format("truetype"),
+                 url("../fonts/HELVETICANEUECYR-BOLD.svg") format("svg");
     font-style:  normal;
     font-weight: 700;
+}
+
+/* HelveticaNeueCyr Medium */
+@font-face {
+    font-family: "Helvetica";
+    src:         url("../fonts/HELVETICANEUECYR-MEDIUM.eot");
+    src:         url("../fonts/HELVETICANEUECYR-MEDIUM.eot?#iefix") format("embedded-opentype"),
+                 url("../fonts/HELVETICANEUECYR-MEDIUM.ttf") format("truetype"),
+                 url("../fonts/HELVETICANEUECYR-MEDIUM.svg") format("svg");
+    font-style:  normal;
+    font-weight: 500;
+}
+
+/* HelveticaNeueCyr Roman */
+@font-face {
+    font-family: "Helvetica";
+    src:         url("../fonts/HELVETICANEUECYR-ROMAN.eot");
+    src:         url("../fonts/HELVETICANEUECYR-ROMAN.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/HELVETICANEUECYR-ROMAN.ttf") format("truetype"),
+    url("../fonts/HELVETICANEUECYR-ROMAN.svg") format("svg");
+    font-style:  normal;
+    font-weight: 600;
 }

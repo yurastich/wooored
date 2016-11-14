@@ -1,21 +1,10 @@
 //todo Colors
-$grey: #282828;
-$bg: #f7f8f8;
-$grey-light: #565656;
-$grey-lighter: #8c8c8c;
-$grey-bg: #f3f3f3;
-$yellow:#ffd800;
-$yellow-text:#ffd800;
-$btn: #d30d40;
-$btn-h: #a00b31;
-$footer-text: #515151;
+$grey: #717070;
+$bg: #f7f7f7;
+$red: #d2232a;
 
-$blue: #004a80;
+$blue: #25408f;
 $orange: #ffb227;
-$blue-text: #0d2e56;
-$blue-green: #59bbff;
-$blue-light: #447bb0;
-$blue-lighter: #73a4d3;
 $grey-input: #252525;
 $pink: #ff2c2c;
 
@@ -64,10 +53,35 @@ img {
   width: 100%;
 }
 
-// todo Background
-@mixin border {
-  border: 8px solid $blue;
+@mixin border($color) {
+  background-color: $color;
+  position: relative;
+  color:#fff;
+  &:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 0;
+    right: calc(100% - 1px);
+    border-top: 0 solid transparent;
+    border-right: 13px solid $color;
+    border-bottom: 60px solid transparent;
+    @include transition-def();
+  }
+  &:hover{
+    color:#fff;
+  }
 }
+
+@mixin border-blue {
+  @include border($blue);
+}
+
+@mixin border-red {
+  @include border($red);
+}
+
 
 // todo Background
 @mixin bg {
@@ -661,6 +675,15 @@ html {
     animation-iteration-count:         infinite;
     -webkit-animation-iteration-count: infinite;
   }
+  &.m-bg-empty{
+    .e-bg-img-container {
+      &:before{
+        display: none;
+        background-color: transparent;
+
+      }
+    }
+  }
 }
 
 @keyframes zoomBg {
@@ -693,4 +716,67 @@ html {
   position: relative;
   z-index:  3;
 
+}
+
+// todo Стрелочка прыгает
+@mixin arrow(){
+  animation-name:                    jump;
+  -webkit-animation-name:            jump;
+  animation-duration:                3s;
+  -webkit-animation-duration:        3s;
+  animation-iteration-count:         infinite;
+  -webkit-animation-iteration-count: infinite;
+  bottom:                            26px;
+  display:                           inline-block;
+  vertical-align:                    top;
+  position:                          absolute;
+  z-index:                           1;
+};
+
+@keyframes jump {
+  0% {
+    bottom: 26px;
+  }
+  50% {
+    bottom: 45px;
+  }
+  60% {
+    bottom: 26px;
+  }
+  70% {
+    bottom: 35px;
+  }
+  80% {
+    bottom: 26px;
+  }
+  90% {
+    bottom: 30px;
+  }
+  100% {
+    bottom: 26px;
+  }
+}
+
+@-webkit-keyframes jump {
+  0% {
+    bottom: 26px;
+  }
+  50% {
+    bottom: 45px;
+  }
+  60% {
+    bottom: 26px;
+  }
+  70% {
+    bottom: 35px;
+  }
+  80% {
+    bottom: 26px;
+  }
+  90% {
+    bottom: 30px;
+  }
+  100% {
+    bottom: 26px;
+  }
 }

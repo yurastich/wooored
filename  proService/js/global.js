@@ -241,7 +241,7 @@ $(document).ready(function () {
     $(window).resize(function () {
         header();
         firstScreen();
-        popup();
+        activePopupCenter();
     });
 
     $(window).load(function () {

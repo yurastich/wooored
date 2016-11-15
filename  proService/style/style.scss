@@ -14,10 +14,6 @@
   @include transition-def();
 }
 
-.container{
-  width: 1090px;
-}
-
 p, h1, h2, h3, h4, span, input, img {
   &::selection {
     background: $pink; /* Safari */
@@ -372,8 +368,12 @@ section{
 .b-icon-list{
   text-align: center;
   padding-top: 25px;
+  font-size: 0;
   .e-icon-item{
     margin-bottom: 60px;
+    display: inline-block;
+    vertical-align: top;
+    float: none;
   }
 }
 
@@ -681,3 +681,254 @@ section{
   font-size: 48px;
   line-height: 60px;
 }
+
+
+@media (min-width: 1200px){
+  .container {
+    width: 1090px;
+  }
+}
+
+@media (max-width: 1199px){
+  .b-nav-list{
+    font-size: 0;
+    text-align: center;
+    .e-nav-item {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 2%;
+      float: none;
+      &:first-child{
+        margin-left: 0;
+      }
+      &:last-child{
+        float: none;
+      }
+    }
+  }
+  .b-fourth{
+    .b-icon-list{
+      .e-icon-item{
+        width: 49%;
+        margin-left: 2%;
+        &:nth-child(2n+1){
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px){
+  .b-card-list{
+    .e-card-item {
+      width: 100%;
+      float: none;
+    }
+  }
+  h2, .b-title {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  h4, .b-subtitle {
+    width: 90%;
+  }
+  .b-fourth{
+    .b-icon-list{
+      .e-icon-item{
+        .b-icon-block {
+          width: 80%;
+        }
+      }
+    }
+  }
+  .b-footer{
+    line-height: 20px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 767px){
+  .b-nav{
+    display: none
+  }
+  .b-logo{
+    width: 210px;
+  }
+  .b-header{
+    .e-header-top{
+      padding: 20px 0;
+      .b-button{
+        margin-top: 0;
+      }
+    }
+  }
+  h1{
+    padding: 0;
+    font-size: 33px;
+    line-height: 40px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  h2, .b-title {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .b-fourth{
+    .b-icon-list{
+      .e-icon-item {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+  }
+  .b-question-list{
+    .e-question-item{
+      width: 100%;
+      margin-left: 0;
+    }
+  }
+  .b-input-list{
+    .e-input-item{
+      margin-left: 0;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+  .b-button-list{
+    text-align: center;
+    margin-top: 10px;
+  }
+  .b-footer{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+  }
+  .b-footer-text-list{
+    padding-top: 10px;
+    li{
+      margin-top: 10px;
+      &:first-child{
+        text-align: center;
+        margin-top: 0;
+      }
+      &:last-child{
+        text-align: center;
+      }
+    }
+  }
+  .b-first{
+    .e-first-content{
+      padding-bottom: 100px;
+      .e-first-dark{
+        padding-top: 40px;
+      }
+    }
+  }
+  .b-fourth{
+    .b-icon-list{
+      .e-icon-item{
+        .b-icon-block {
+          width: 100% ;
+        }
+      }
+    }
+  }
+  .b-fifth{
+    padding: 30px  0;
+  }
+  .b-popup{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    padding: 15px;
+    .b-title{
+      font-size: 20px;
+      line-height: 27px;
+    }
+    .b-button{
+      margin-top: 0;
+    }
+    .b-under-text{
+      padding-top: 6px;
+    }
+    .e-popup-text{
+      padding-bottom: 9px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+    &.m-popup-sm{
+      padding: 15px;
+      width: 90%;
+      margin: 0 auto;
+      .e-popup-text{
+        padding-bottom: 9px;
+      }
+      .b-under-text{
+        padding-top: 3px;
+      }
+    }
+  }
+}
+
+@media (max-width: 479px){
+  .b-header{
+    .e-header-top{
+      text-align: center;
+      .b-button{
+        float: none;
+        margin-top: 10px;
+      }
+    }
+  }
+  .b-card{
+    height: auto;
+    padding: 0;
+    padding-bottom: 45px;
+    .e-card-photo{
+      position: relative;
+      top: auto;
+      bottom: auto;
+      left: auto;
+      width: 100%;
+      height: 200px;
+    }
+    .e-card-text{
+      margin: 20px 20px 0;
+    }
+  }
+  .b-icon-list{
+    .e-icon-item{
+      margin-bottom: 30px;
+    }
+  }
+  .b-button-list{
+    .e-button-item{
+      margin-left: 0;
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+      &:first-child{
+        margin-top: 0;
+      }
+    }
+  }
+  h1{
+    font-size: 25px;
+    line-height: 38px;
+  }
+  .b-popup{
+    .b-form{
+      .b-input-container{
+        width: 100%;
+        margin-left: 0;
+        &:nth-child(2n){
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+
+

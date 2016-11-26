@@ -1,0 +1,32 @@
+/* HelveticaNeueCyr Bold */
+@font-face {
+    font-family: "Helvetica";
+    src:         url("../fonts/HELVETICANEUECYR-BOLD.eot");
+    src:         url("../fonts/HELVETICANEUECYR-BOLD.eot?#iefix") format("embedded-opentype"),
+                 url("../fonts/HELVETICANEUECYR-BOLD.ttf") format("truetype"),
+                 url("../fonts/HELVETICANEUECYR-BOLD.svg") format("svg");
+    font-style:  normal;
+    font-weight: 700;
+}
+
+/* HelveticaNeueCyr Medium */
+@font-face {
+    font-family: "Helvetica";
+    src:         url("../fonts/HELVETICANEUECYR-MEDIUM.eot");
+    src:         url("../fonts/HELVETICANEUECYR-MEDIUM.eot?#iefix") format("embedded-opentype"),
+                 url("../fonts/HELVETICANEUECYR-MEDIUM.ttf") format("truetype"),
+                 url("../fonts/HELVETICANEUECYR-MEDIUM.svg") format("svg");
+    font-style:  normal;
+    font-weight: 500;
+}
+
+/* HelveticaNeueCyr Roman */
+@font-face {
+    font-family: "Helvetica";
+    src:         url("../fonts/HELVETICANEUECYR-ROMAN.eot");
+    src:         url("../fonts/HELVETICANEUECYR-ROMAN.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/HELVETICANEUECYR-ROMAN.ttf") format("truetype"),
+    url("../fonts/HELVETICANEUECYR-ROMAN.svg") format("svg");
+    font-style:  normal;
+    font-weight: 600;
+}

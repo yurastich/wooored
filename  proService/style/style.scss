@@ -819,9 +819,10 @@ section{
   }
   .b-first{
     .e-first-content{
+      padding-top: 60px;
       padding-bottom: 100px;
       .e-first-dark{
-        padding-top: 40px;
+        padding-top: 0;
       }
     }
   }
@@ -868,6 +869,10 @@ section{
         padding-top: 3px;
       }
     }
+  }
+  .b-thanks-text{
+    font-size: 30px;
+    line-height: 36px;
   }
 }
 

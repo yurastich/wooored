@@ -164,6 +164,9 @@ $(document).ready(function () {
 
   };
 
+  // Number fix
+  $("input[name=num]").mask("+7 (999) 999 99 99");
+
   $(".b-video-button").click(function () {
     $(this).hide();
   });

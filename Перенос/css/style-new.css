@@ -1,0 +1,66 @@
+.t {
+  display: table;
+  height: 100%;
+  width: 100%;
+  text-align: center; }
+  .t .c {
+    display: table-cell;
+    vertical-align: middle; }
+
+.e-new-line {
+  display: block; }
+
+.b-logo-container {
+  text-align: center; }
+
+.b-logo {
+  width: 300px;
+  display: inline-block;
+  vertical-align: top; }
+  .b-logo img {
+    width: 100%; }
+
+.b-subtitle {
+  font-size: 30px;
+  line-height: 34px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px; }
+
+.b-smtitle {
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 300; }
+
+.q3 {
+  background-color: #C71188; }
+
+.q3Button:hover {
+  color: #C71188; }
+
+.q4BlockL img {
+  width: 50%; }
+
+.q4BlockRButton {
+  color: #C71188;
+  border-color: #C71188; }
+  .q4BlockRButton:hover {
+    background-color: #C71188; }
+
+.slick-active {
+  background-color: #C71188; }
+
+.reviewArrow, .reviewArrowR, .reviewLine {
+  background-color: #C71188; }
+
+.reviewName {
+  color: #C71188; }
+
+.q10 {
+  height: 700px; }
+
+/*# sourceMappingURL=style-new.css.map */

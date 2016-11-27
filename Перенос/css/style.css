@@ -1,0 +1,2363 @@
+@font-face{ font-family: 'MuseoSansCyrl_100';
+    src: url('../font/MuseoSansCyrl_100.eot');
+    src: url('../font/MuseoSansCyrl_100.eot?#iefix') format('embedded-opentype'),
+         url('../font/MuseoSansCyrl_100.otf') format('truetype');
+            
+                font-weight: normal;
+                font-style: normal;
+}
+@font-face{ font-family: 'MuseoSansCyrl_300';
+    src: url('../font/MuseoSansCyrl_300.eot');
+    src: url('../font/MuseoSansCyrl_300.eot?#iefix') format('embedded-opentype'),
+         url('../font/MuseoSansCyrl_300.otf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+}
+@font-face{ font-family: 'MuseoSansCyrl_500';
+    src: url('../font/MuseoSansCyrl_500.eot');
+    src: url('../font/MuseoSansCyrl_500.eot?#iefix') format('embedded-opentype'),
+         url('../font/MuseoSansCyrl_500.otf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+}
+@font-face{ font-family: 'MuseoSansCyrl_700';
+    src: url('../font/MuseoSansCyrl_700.eot');
+    src: url('../font/MuseoSansCyrl_700.eot?#iefix') format('embedded-opentype'),
+         url('../font/MuseoSansCyrl_700.otf') format('truetype');
+                font-weight: normal;
+                font-style: normal;
+}
+*{
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
+html, body {
+    cursor: default;
+    height: 100%;
+    position:relative;
+    min-height:100%;
+   
+    
+}
+body {  
+    overflow: auto;
+    font-family:Roboto,sans-serif;
+  
+    }
+#container{
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+}
+
+.content {
+  margin:0 auto;
+  width:960px;
+  position:relative;
+}
+.contenth100 {
+  width: 960px;
+  position:relative;
+  margin: 0 auto;
+  height: 100%;
+}
+
+
+
+
+
+
+
+/* Clear */
+.clear:before,
+.clear:after {
+    content: "";
+    display: table;
+}
+.clear:after {
+    clear: both;
+}
+.clear {
+    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+.textErrorWrong{    
+font-size: 15px;
+margin-left: 14px;
+margin: 0 auto;
+width: 292px;
+height: 30px;
+text-align: center;
+display: block;
+
+}
+
+#smallVery-dialog {
+  background: white;
+  padding: 60px 62px 60px 62px;
+  text-align: left;
+  max-width: 755px;
+  margin: 40px auto;
+  position: relative;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+.smallVery-dialog {
+  text-align: left;
+  max-width: 860px;
+  margin: 40px auto;
+  position: relative;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
+/**
+ * Fade-zoom animation for first dialog
+ */
+
+/* start state */
+.my-mfp-zoom-in .zoom-anim-dialog {
+  opacity: 0;
+
+  -webkit-transition: all 0.2s ease-in-out; 
+  -moz-transition: all 0.2s ease-in-out; 
+  -o-transition: all 0.2s ease-in-out; 
+  transition: all 0.2s ease-in-out; 
+
+
+
+  -webkit-transform: scale(0.8); 
+  -moz-transform: scale(0.8); 
+  -ms-transform: scale(0.8); 
+  -o-transform: scale(0.8); 
+  transform: scale(0.8); 
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+  opacity: 1;
+
+  -webkit-transform: scale(1); 
+  -moz-transform: scale(1); 
+  -ms-transform: scale(1); 
+  -o-transform: scale(1); 
+  transform: scale(1); 
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+  -webkit-transform: scale(0.8); 
+  -moz-transform: scale(0.8); 
+  -ms-transform: scale(0.8); 
+  -o-transform: scale(0.8); 
+  transform: scale(0.8); 
+
+  opacity: 0;
+}
+
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-out; 
+  -moz-transition: opacity 0.3s ease-out; 
+  -o-transition: opacity 0.3s ease-out; 
+  transition: opacity 0.3s ease-out;
+}
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+
+
+/**
+ * Fade-move animation for second dialog
+ */
+
+/* at start */
+.my-mfp-slide-bottom .zoom-anim-dialog {
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+
+  -webkit-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+  -moz-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+  -ms-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+  -o-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+  transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+
+}
+
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+  opacity: 1;
+  -webkit-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+  -moz-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+  -ms-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+  -o-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+  transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+}
+
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
+  opacity: 0;
+
+  -webkit-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+  -moz-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+  -ms-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+  -o-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+  transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+}
+
+/* Dark overlay, start state */
+.my-mfp-slide-bottom.mfp-bg {
+  opacity: 0;
+
+  -webkit-transition: opacity 0.3s ease-out; 
+  -moz-transition: opacity 0.3s ease-out; 
+  -o-transition: opacity 0.3s ease-out; 
+  transition: opacity 0.3s ease-out;
+}
+/* animate in */
+.my-mfp-slide-bottom.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+/* animate out */
+.my-mfp-slide-bottom.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+
+.inputValidYes {
+  border: 1px solid green;
+}
+.inputValidNo {
+  border: 1px solid red;
+}
+
+.logo {
+background: url('../images/ui/logo.png')no-repeat;
+margin-left:-240px;
+height:123px;
+width:480px;
+position:absolute;
+top:50%;
+margin-top:-62px;
+-webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+    left: 50%;
+}
+.q1{
+  background: url('../images/index/q1bg.jpg')center center no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: relative;;
+}
+.headLineL{
+width: 20%;
+height: 1px;
+background-color: #FFFFFF;
+opacity: 0.7;
+position: relative;
+bottom: 50%;
+float: left;
+}
+.headLineR{
+width: 20%;
+height: 1px;
+background-color: #FFFFFF;
+opacity: 0.7;
+position: relative;
+bottom: 50%;
+float: right;
+}
+.arrow{
+    left: 50%;
+    bottom: 20px;
+    margin-left: -40px;
+    width: 80px;
+    height: 23px;
+    background: url("../images/ui/arrow.png") no-repeat;
+    cursor: pointer;
+    position: absolute;
+}
+.arrowq9{
+    left: 50%;
+    bottom: 20px;
+    margin-left: -40px;
+    width: 80px;
+    height: 23px;
+    background: url("../images/ui/arrow.png") no-repeat;
+    cursor: pointer;
+    position: absolute;
+}
+.arrow1{
+    left: 50%;
+    bottom: 109px;
+    margin-left: -40px;
+    width: 80px;
+    height: 23px;
+    background: url("../images/ui/arrow1.png") no-repeat;
+    cursor: pointer;
+    position: absolute;
+    z-index: 9999999999;
+}
+.q2Block{
+width: 591px;
+text-align: center;
+-webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+    margin: 0 auto;
+}
+.q2BlockIcon{
+background: url('../images/ui/q2BlockIcon.png')no-repeat;
+width: 180px;
+height: 179px;
+margin:0 auto;
+margin-bottom:51px;
+}
+.q2BlockTitle{
+                font-size: 46px;
+                font-weight: 300;
+                margin-bottom: 25px;
+
+}
+.q2{
+                padding-bottom: 120px;
+                padding-top: 120px;
+
+}
+.q2BlockText{
+                font-size: 24px;
+                font-weight: 300;
+
+}
+.q2Button{
+cursor: pointer;
+width: 300px;
+height:50px;
+margin:0 auto;
+margin-top:30px;
+border:1px solid;
+padding-top:14px;
+-webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+-webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    transition: all 250ms ease;
+}
+.q2Button:hover {
+  background-color: black;
+  color:white;
+  -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    transition: all 250ms ease;
+}
+.q3{
+background-color: #00BB94;
+padding-top: 73px;
+margin-bottom: 31px;
+z-index: -3;
+padding-bottom: 252px;
+}
+.q3Title{
+width: 83%;
+font-size: 53px;
+color: white;
+margin: 0 auto;
+text-align: center;
+margin-bottom: 66px;;
+}
+.q3Block1{
+width: 316px;
+text-align: center;
+display: inline-block;
+-webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+}
+.q3Block2{
+width: 316px;
+text-align: center;
+display: inline-block;
+-webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+}
+.q3Block3{
+width: 316px;
+text-align: center;
+display: inline-block;
+-webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+}
+.q3Blocks {
+  -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+}
+.q3BlockIcon1{
+background: url('../images/ui/q3BlockIcon1.png')no-repeat;
+width: 182px;
+height: 182px;
+margin: 0 auto;
+margin-bottom: 35px;
+}
+
+.q3BlockIcon2{
+background: url('../images/ui/q3BlockIcon2.png')no-repeat;
+width: 182px;
+height: 182px;
+margin: 0 auto;
+margin-bottom: 35px;
+}
+.q3BlockIcon3{
+background: url('../images/ui/q3BlockIcon3.png')no-repeat;
+width: 182px;
+height: 182px;
+margin: 0 auto;
+margin-bottom: 35px;
+}
+.q3BlockText{
+color:white;
+font-size:19px;
+}
+.q3Button{
+cursor: pointer;
+width: 300px;
+height:50px;
+margin:0 auto;
+margin-top:97px;
+border:2px solid;
+padding-top:11px;
+-webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+color: white;
+text-align: center;
+font-size: 18px;
+-webkit-transition: all 250ms ease;
+-moz-transition: all 250ms ease;
+-o-transition: all 250ms ease;
+-ms-transition: all 250ms ease;
+transition: all 250ms ease;
+}
+.q3Button:hover {
+-webkit-transition: all 250ms ease;
+-moz-transition: all 250ms ease;
+-o-transition: all 250ms ease;
+-ms-transition: all 250ms ease;
+transition: all 250ms ease;
+background-color: white;
+color:#00BB94;
+}
+.q4{
+                height: 415px;;
+}
+.your-class img {
+  display: inline-block;
+}
+.q4BlockL{
+margin: 0 auto;
+display: inline-block;
+width: 100%;
+margin-top: -202px;
+position: absolute;;
+}
+.q4MobileBlocks {
+                width: 100%;
+  display: none;
+}
+.q4Tr {
+  background: url('../images/ui/q4tr.png')center center no-repeat;
+  margin-top: -422px;
+  height: 391px;
+}
+.q4BlockR{
+width: 449px;
+display: inline-block;
+float: right;
+vertical-align: top;
+margin-top: 36px;
+background: transparent;
+}
+.q4BlockRTitle{
+                font-size: 34px;
+                width: 100%;
+
+}
+.q4BlockRTitle span{
+                font-size: 56px;
+
+}
+.q4BlockRText{
+font-size: 29px;
+width: 100%;
+margin-top: 32px;
+}
+.q4BlockRText p{
+font-size: 16px;
+line-height: 29px;
+margin-top: 15px;
+width: 342px;
+}
+.q4BlockRButton{
+cursor: pointer;
+width: 300px;
+height:50px;
+margin-top:55px;
+border:2px solid #00BB94;
+padding-top:13px;
+-webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+color: #00BB94;
+text-align: center;
+font-size: 18px;;
+-webkit-transition: all 250ms ease;
+-moz-transition: all 250ms ease;
+-o-transition: all 250ms ease;
+-ms-transition: all 250ms ease;
+transition: all 250ms ease;
+margin: 0 auto;
+margin-left: 0px;
+margin-top: 140px;
+}
+.q4BlockRButton:hover{
+  background-color: #00BB94;
+  color:white;
+-webkit-transition: all 250ms ease;
+-moz-transition: all 250ms ease;
+-o-transition: all 250ms ease;
+-ms-transition: all 250ms ease;
+transition: all 250ms ease;
+}
+.q5{
+
+}
+.q5{
+background: url('../images/ui/q5bg.png')center center no-repeat;
+  
+  width: 100%;
+  height: 934px;
+  margin-top: -156px;
+  text-align: center;
+  padding-top: 337px;
+}
+.q5Title{
+color:white;
+font-size:50px;;
+}
+.q5Text{
+                width: 615px;
+                text-align: center;
+                margin: 0 auto;
+                color: white;
+                margin-top: 20px;
+                font-weight: 300;
+                font-size: 23px;
+
+}
+.q5Icon{
+background: url('../images/ui/q5Icon.png')no-repeat;
+width: 166px;
+height: 78px;
+margin:0 auto;
+margin-top:60px;
+}
+.q5Button{
+cursor: pointer;
+width: 300px;
+height:53px;
+margin:0 auto;
+margin-top:87px;
+border:1px solid;
+padding-top:13px;
+-webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+border-radius: 6px;
+color:#4DA9D1;
+background-color: white;
+font-size: 22px;
+-webkit-transition: all 250ms ease;
+-moz-transition: all 250ms ease;
+-o-transition: all 250ms ease;
+-ms-transition: all 250ms ease;
+transition: all 250ms ease;
+}
+.q5Button:hover {
+-webkit-transition: all 250ms ease;
+-moz-transition: all 250ms ease;
+-o-transition: all 250ms ease;
+-ms-transition: all 250ms ease;
+transition: all 250ms ease;
+background-color: #4DA9D1;
+color:white;
+}
+
+.q5Bot{
+background:url('../images/ui/q5bot.png');
+height: 216px;
+margin-top: -2px;
+position: absolute;
+width: 100%;;
+}
+.q6{
+background:url('../images/index/q6bg.jpg')center center no-repeat;
+height: 883px;
+}
+.q6PlayButton{
+background: url('../images/ui/q6Play.png')no-repeat;
+width: 281px;
+height: 281px;
+position: absolute;
+left: 50%;
+top: 50%;
+margin-left: -140px;
+margin-top: -140px;
+cursor: pointer;
+-webkit-transition: all 250ms ease;
+-moz-transition: all 250ms ease;
+-o-transition: all 250ms ease;
+-ms-transition: all 250ms ease;
+transition: all 250ms ease;
+}
+.q6PlayButtonHide {
+  opacity: 0;
+  margin-top: -50px;
+  -webkit-transition: all 250ms ease;
+-moz-transition: all 250ms ease;
+-o-transition: all 250ms ease;
+-ms-transition: all 250ms ease;
+transition: all 250ms ease;
+}
+.q6PlayButton:hover {
+  background: url('../images/ui/q6PlayHov.png')no-repeat;
+
+}
+.q7 {
+  height: 800px;
+  overflow: hidden;;
+}
+.q7Block1 {
+                -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                transition: all 1000ms ease;
+                position: absolute;
+                left: 50%;
+                margin-left: -339px;
+
+}
+.q7Title{
+                font-size: 31px;
+                font-weight: 300;
+                width: 529px;
+                margin: 0 auto;
+                margin-top: 106px;
+                -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                transition: all 1000ms ease;
+
+}
+.q7Title span{
+                font-weight: 500;
+
+}
+.q7Block{
+                width: 672px;
+                margin-top: 50px;
+                margin-left: 60px;
+
+}
+.q7BlockImg{
+                display: inline-block;
+                margin-left: 40px;
+                float: left;
+                z-index: 50;
+                position: absolute;
+                margin-top: 26px;
+                border-radius: 50%;;;;
+
+}
+.q7BlockImg img{
+                box-shadow: 0 0 30px rgba(0,0,0,0.5);
+                border-radius: 100%;
+
+}
+.q7BlockIcon1{
+background: url('../images/ui/q7BlockIcon1Blue.png')no-repeat;
+width: 474px;
+height: 82px;
+display: inline-block;
+margin-top: 35px;
+margin-left: 190px;
+TEXT-ALIGN: CENTER;
+padding-top: 24px;
+color: white;
+font-size: 26px;
+font-weight: 500;
+position: absolute;/* z-index: 1; */;
+}
+.q7BlockIcon2{
+background: url('../images/ui/q7BlockIcon1Blue.png')no-repeat;
+width: 543px;
+height: 82px;
+display: inline-block;
+margin-left: 190px;;
+TEXT-ALIGN: CENTER;
+padding-top: 24px;
+color: white;
+font-size: 26px;
+font-weight: 500;
+margin-top: 121px;
+position: absolute;
+}
+.q7BlockIcon3{
+background: url('../images/ui/q7BlockIcon1Blue.png')no-repeat;
+width: 543px;
+height: 82px;
+display: inline-block;
+margin-left: 190px;
+TEXT-ALIGN: CENTER;
+padding-top: 24px;
+color: white;
+font-size: 26px;
+font-weight: 500;
+margin-top: 203px;
+position: absolute;
+}
+.q7BlockIcon1s{
+background: url('../images/ui/q7BlockIcon1s.png')no-repeat;
+display: inline-block;
+width: 464px;
+height: 68px;
+margin-left: 270px;
+margin-top: 42px;
+position: absolute;
+}
+.q7BlockIcon2s{
+background: url('../images/ui/q7BlockIcon2s.png')no-repeat;
+display: inline-block;
+width: 464px;
+height: 68px;
+margin-left: 270px;
+margin-top: 128px;
+position: absolute;
+}
+.q7BlockIcon3s{
+background: url('../images/ui/q7BlockIcon3s.png')no-repeat;
+display: inline-block;
+width: 464px;
+height: 68px;
+margin-left: 270px;
+margin-top: 210px;
+position: absolute;
+}
+.q7BlockIcon1:hover{
+background: url('../images/ui/q7BlockIcon1Hov.png')no-repeat;
+cursor: pointer;
+}
+.q7BlockIcon2:hover{
+background: url('../images/ui/q7BlockIcon1Hov.png')no-repeat;
+cursor: pointer;
+}
+.q7BlockIcon3:hover{
+background: url('../images/ui/q7BlockIcon1Hov.png')no-repeat;
+cursor: pointer;
+}
+.q8{
+background: url('../images/index/q8bg.png')center no-repeat;
+width: 100%;
+padding-top: 200px;
+z-index: 2;
+padding-bottom: 31px;
+position: absolute;
+-webkit-transition: all 1000ms ease;
+-moz-transition: all 1000ms ease;
+-o-transition: all 1000ms ease;
+-ms-transition: all 1000ms ease;
+transition: all 1000ms ease;
+height: 869px;
+}
+.q8Title{
+                color: white;
+                font-size: 51px;
+                margin-left: 110px;
+
+}
+.q8Text{
+width: 800px;
+color: white;
+margin-top: 13px;
+font-size: 19px;
+margin-left: 110px;;
+}
+.calcBlock{
+width: 737px;
+height: 370px;
+-webkit-border-radius: 7px;
+-moz-border-radius: 7px;
+border-radius: 7px;
+border: 1px solid #00785E;
+background-color: white;
+padding: 27px;
+border-bottom: 3px solid #00785E;
+margin: 0 auto;
+margin-top: 35px;
+}
+.calcTitle{
+                font-size: 13px;
+                display: inline-block;
+                float: left;
+
+}
+.calcTabs{
+float: right;
+font-size: 13px;
+cursor: pointer;;
+}
+.calcTab{
+display: inline-block;
+padding: 2px 10px 0 10px;
+height: 20px;
+}
+.calcTabActive {
+  background: #1B916C;
+  color:white;
+  border-radius: 3px;
+}
+.polzunki{
+width: 100%;
+height: 83px;
+text-align: center;
+MARGIN-TOP: 55PX;
+}
+.q8Icon{
+background: url('../images/ui/q8Icon.png')no-repeat;
+width: 327px;
+height: 95px;
+left: 25%;
+top: 72px;
+padding-top: 26px;
+color: white;
+font-size: 14px;
+padding-left: 52px;
+margin-top: 47px;
+margin-left: 165px;
+}
+.q8IconText{
+                text-align: center;;
+
+}
+.q9{
+                position: absolute;
+                margin: 0 auto;
+                left: 50%;
+                margin-left: -480px;
+                margin-top:800px;
+                -webkit-transition:all 1000ms ease;
+                -moz-transition:all 1000ms ease;
+                -o-transition:all 1000ms ease;
+                -ms-transition:all 1000ms ease;
+                transition:all 1000ms ease;
+                overflow-x:hidden;
+}
+.reviewOver {
+  overflow: hidden;
+}
+.reviewBlock{
+width: 665px;;
+height:550px;
+background-color: #EFEFEF;
+padding-top: 132px;
+z-index: 1;
+position: relative;
+margin: 2px auto;
+border-radius: 10px;
+box-shadow: 0 0 13px rgba(0,0,0,0.5);;
+}
+.reviewFixed {
+                display: block;
+                width: 2681px;
+  
+}
+.reviewImg{
+                text-align: center;
+
+}
+.reviewImg img{
+
+}
+.reviewShell {
+                text-align: center;
+                display: inline-block;
+  
+}
+
+.reviewShell2 {
+                text-align: center;
+                z-index: -1;
+                display: inline-block;;
+  
+}
+.reviewShell3 {
+                text-align: center;
+                display: inline-block;
+                z-index: -1;
+  
+}
+.reviewShell4 {
+                text-align: center;
+                display: inline-block;
+                z-index: -1;
+  
+}
+
+.reviewName{
+                text-align: center;
+                font-size: 30px;
+                color: #B11111;
+                font-weight: 500;
+                margin-top: 14px;
+
+}
+.reviewText{
+width: 475px;
+margin: 0 auto;
+text-align: center;
+font-size: 18px;
+margin-top: 10px;
+margin-bottom: 35px;
+}
+.reviewArrow{
+height: 77px;
+width: 77px;
+background-color: #FFCD09;
+float: left;
+margin-left: -41px;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    transition: all 250ms ease;
+    cursor: pointer;
+    margin-top: -27px;
+}
+.reviewArrow:hover {
+        -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    transition: all 250ms ease;
+  background-color: #FFD438;
+  box-shadow: 0 0 13px rgba(0,0,0,0.5);
+}
+.reviewArrowR {
+ height: 77px;
+width: 77px;
+background-color: #FFCD09;
+float: right;
+text-align: center;
+margin-right: -38px;
+cursor: pointer;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    transition: all 250ms ease;
+    margin-top: -38px; ;
+}
+.reviewArrowR:hover {
+      -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    transition: all 250ms ease;
+  background-color: #FFD438;
+  box-shadow: 0 0 13px rgba(0,0,0,0.5);
+}
+.rArrow{
+
+}
+.lArrow{
+background: url('../images/ui/lArrow.png')no-repeat;
+width: 24px;
+height: 17px;
+margin: 0 auto;
+margin-top: 28px;
+}
+.rArrow{
+background: url('../images/ui/rArrow.png')no-repeat;
+width: 24px;
+height: 17px;
+margin: 0 auto;
+margin-top: 28px;
+}
+.reviewLine{
+width: 93px;
+height: 5px;
+background-color: #FFCD09;
+margin: 0 auto;
+margin-top: 37px;
+}
+.q10{
+height: 875px;
+background: url('../images/index/q10bg.jpg')center no-repeat;
+margin-top: 1320px;
+padding-top: 144px;
+padding-bottom: 25px;
+-webkit-transition: all 1000ms ease;
+-moz-transition: all 1000ms ease;
+-o-transition: all 1000ms ease;
+-ms-transition: all 1000ms ease;
+transition: all 1000ms ease;
+position: relative;
+}
+.q10Title{
+                text-align: center;
+                font-size: 40px;
+                margin-bottom: 31px;
+                -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                transition: all 1000ms ease;
+
+}
+.q10TitleHide{
+  -webkit-transition: all 1000ms ease;
+-moz-transition: all 1000ms ease;
+-o-transition: all 1000ms ease;
+-ms-transition: all 1000ms ease;
+transition: all 1000ms ease;
+opacity: 0;
+}
+.q10Inp{
+                width: 392px;
+                border: none;
+                background: transparent;
+                border-bottom: 3px solid;
+                font-size: 25px;
+                padding-left: 16px;
+                padding-bottom: 7px;
+                font-weight: 4;
+                display: inline-block;;;;
+                margin-right: 37px;
+                margin-bottom: 44px;;
+                font-family: roboto;
+                outline: none;
+
+}
+.q10Inp:nth-child(2n){
+margin-right: 0px;
+}
+.q10Form{
+                padding-left: 65px;
+                -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                transition: all 1000ms ease;
+
+}
+.q10FormHide {
+  -webkit-transition: all 1000ms ease;
+-moz-transition: all 1000ms ease;
+-o-transition: all 1000ms ease;
+-ms-transition: all 1000ms ease;
+transition: all 1000ms ease;
+opacity: 0;
+}
+.q10Button{
+width: 392px;
+height: 35px;
+background-color: #5A402C;
+text-align: center;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+color: white;
+cursor: pointer;
+padding-top: 7px;
+display: inline-block;
+-webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    transition: all 250ms ease;
+    border: 2px solid #5A402C;
+}
+.q10Button:hover {
+-webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    transition: all 250ms ease;
+    background: transparent;
+    color:#5A402C;
+    border:2px solid #5A402C;
+    font-weight:500;
+}
+.q10formText{
+display: inline-block;
+width: 355px;
+font-size: 12px;
+vertical-align: middle;
+margin-left: 59px;
+}
+.q10Contacts{
+                width: 560px;
+                position: relative;
+                height: 198px;
+                margin: 0 auto;
+                margin-top: 7%;
+                -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                transition: all 1000ms ease;;
+
+}
+.q10ContactsHide {
+  -webkit-transition: all 1000ms ease;
+-moz-transition: all 1000ms ease;
+-o-transition: all 1000ms ease;
+-ms-transition: all 1000ms ease;
+transition: all 1000ms ease;
+opacity: 0;
+}
+.q10Img{
+background: url('../images/ui/q10ImgBg.png')no-repeat;
+width: 206px;
+height: 206px;
+text-align: center;
+position: absolute;
+z-index: 5;
+}
+.q10Img img{
+                margin-top: 28px;
+                border-radius: 100%;
+
+}
+.q10Top{
+background: url('../images/ui/q10Top.png')no-repeat;
+width: 467px;
+height: 49px;
+margin-left: 11%;
+position: absolute;
+z-index: 3;
+margin-top: 5%;
+text-align: center;
+color:white;
+padding-top:11px;
+font-size:21px;
+padding-left:70px;
+}
+.q10Bot{
+background: url('../images/ui/q10Bot.png')no-repeat;
+width: 467px;
+height: 94px;
+margin-left: 11%;
+position: absolute;
+z-index: 3;
+margin-top: 15%;
+text-align: left;
+color:white;
+padding-top:7px;
+font-size:14px;
+padding-left:145px;
+padding-right:19px;
+line-height:1;
+}
+.q10Bot span{
+
+}
+.vkLogo{
+background: url('../images/ui/vkLogo.png')no-repeat;
+width: 69px;
+height: 62px;
+position: absolute;;;
+-moz-border-radius: 8px;
+}
+.q10Social{
+                right: 31px;
+                bottom: -57px;
+                position: absolute;
+
+}
+.socShell{
+    background-color: #3A291A;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    width: 69px;
+    height: 62px;
+    padding-left: 10px;
+    padding-top: 15px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 10px;;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    transition: all 250ms ease;
+}
+.socShell:hover {
+  background-color: #422F21;
+}
+.socShell:focus {
+  background-color: #4A3628;
+}
+.socShell:active {
+  background-color: #4A3628;
+}
+.fbLogo{
+background: url('../images/ui/fbLogo.png')no-repeat;
+width: 15px;
+height: 33px;
+position: absolute;
+margin-left: 16px;
+}
+.copy{
+                color: white;
+                text-align: center;
+                width: 340px;
+                margin: 0 auto;
+                position: absolute;
+                left: 50%;
+                margin-left: -170px;
+                bottom: 20px;
+
+}
+.logoHide{
+opacity: 0;
+    -webkit-transition: all 2000ms ease;
+    -moz-transition: all 2000ms ease;
+    -o-transition: all 2000ms ease;
+    -ms-transition: all 2000ms ease;
+    transition: all 2000ms ease;
+}
+.q2BlockHide{
+opacity: 0;
+-webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+}
+.q3BlockHide{
+opacity: 0;
+
+-webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+}
+.q4Blocks{
+-webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+}
+.q4BlocksHide {
+  opacity: 0;
+margin-top: 30px;
+-webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+}
+.q5Blocks {
+  -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+}
+.q5BlockHide {
+   opacity: 0;
+margin-top: -30px;
+-webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    transition: all 1000ms ease; 
+}
+.q7Block {
+  -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    transition: all 1000ms ease; 
+}
+.q7BlockHide {
+  opacity: 0;
+  -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+    margin-left: -390px; 
+}
+.q7Block1Bg {
+  background: url('../images/ui/q7BlockIcon1.png')no-repeat;
+  width: 678px;
+  height:456px;
+  margin:0 auto;
+  text-align:center;
+  padding-top:21px;
+
+}
+.q7BlockIconMoney {
+
+}
+.q7BlockIconMoney img{
+                -webkit-transition: all 250ms ease;
+                -moz-transition: all 250ms ease;
+                -o-transition: all 250ms ease;
+                -ms-transition: all 250ms ease;
+                transition: all 250ms ease;
+
+}
+.q7BlockIconMoney img:hover{
+                cursor: pointer;
+                transform: rotate(180deg);
+                -webkit-transition: all 250ms ease;
+                -moz-transition: all 250ms ease;
+                -o-transition: all 250ms ease;
+                -ms-transition: all 250ms ease;
+                transition: all 250ms ease;
+
+}
+.q7BlockIconCube img{
+-webkit-transition: all 250ms ease;
+-moz-transition: all 250ms ease;
+-o-transition: all 250ms ease;
+-ms-transition: all 250ms ease;
+transition: all 250ms ease;
+}
+.q7BlockIconCube img:hover {
+cursor: pointer;
+                transform: rotate(180deg);
+                -webkit-transition: all 250ms ease;
+                -moz-transition: all 250ms ease;
+                -o-transition: all 250ms ease;
+                -ms-transition: all 250ms ease;
+                transition: all 250ms ease;
+}
+.q7BlockIconTime img{
+-webkit-transition: all 250ms ease;
+-moz-transition: all 250ms ease;
+-o-transition: all 250ms ease;
+-ms-transition: all 250ms ease;
+transition: all 250ms ease;
+}
+.q7BlockIconTime img:hover {
+cursor: pointer;
+                transform: rotate(180deg);
+                -webkit-transition: all 250ms ease;
+                -moz-transition: all 250ms ease;
+                -o-transition: all 250ms ease;
+                -ms-transition: all 250ms ease;
+                transition: all 250ms ease;
+}
+
+.q7Block1Text{
+                width: 630px;
+                margin: 0 auto;
+                margin-top: 40px;
+                color: white;
+                line-height: 27px;
+                font-size: 18px;
+
+}
+.q7Block1Hide1 {
+  opacity:0;
+  -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+    display: inline-block;
+    position: absolute;
+    left: 1500px !important;
+}
+.q7Block2 {
+                display: inline-block;
+                position: absolute;
+                left: 50%;
+                margin-left: -339px;
+                -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                transition: all 1000ms ease;
+                
+
+}
+.q7Block1Hide2 {
+  opacity:0;
+  -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+    display: inline-block;
+    position: absolute;
+    left: 1500px !important;
+}
+.q7Block3 {
+                display: inline-block;
+                position: absolute;
+                -webkit-transition: all 1000ms ease;
+                -moz-transition: all 1000ms ease;
+                -o-transition: all 1000ms ease;
+                -ms-transition: all 1000ms ease;
+                transition: all 1000ms ease;
+                left: 50%;
+                margin-left: -339px;
+
+}
+.q7Block1Hide3 {
+  opacity:0;
+  -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+    display: inline-block;
+    position: absolute;
+    left: 1500px !important;
+}
+
+
+#slider1 {
+                margin-top: 66px;
+
+}
+
+.q7TitleHide  {
+  opacity: 0;
+  margin-top:-30px;
+  -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+}
+.q8Hide  {
+  opacity: 0;
+  margin-top:30px;
+  -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+}
+
+.q8Shell {
+-webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+    opacity: 1;
+}
+.q8ShellHide {
+-webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+    opacity: 0;  
+}
+.q9Hide {
+  -webkit-transition: all 1000ms ease;
+    -moz-transition: all 1000ms ease;
+    -o-transition: all 1000ms ease;
+    -ms-transition: all 1000ms ease;
+    transition: all 1000ms ease;
+    opacity: 0;  
+    margin-top: 500px;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 300px) and (max-width: 736px)  {
+  .q7Block{
+  padding-left: -17px !important;
+  width: 100% !important;
+  text-align: center;
+    
+  }
+.reviewOver{
+  width: 100%;
+}
+.logo{
+                background: url('../images/ui/logo1s.png')no-repeat;
+                width: 320px;
+                height: 85px;
+                left: 52%;
+                margin-left: -165px !important;
+                text-align: center;
+}
+.q4BlockRText{
+                margin-top: 0px;
+  
+}
+.q4BlockRTitle span{
+                font-size: 39px;
+                margin-left: 0;
+  
+}
+.slick-dots{;
+
+}
+.q4BlockRButton{
+                margin-left: -145px !important;
+                margin-right: 0px !important;
+                width: 290px;
+                position: absolute;
+                left: 50%;
+
+}
+.q4BlockRTitle{
+                font-size: 23px !important;
+                text-align: center;
+                width: 100%;
+                margin-left: 0px !important;
+
+}
+.q4BlockRText {
+                margin-left: 0px !important;
+                font-size: 21px;
+                text-align: center;
+                width: 100%;
+
+}
+.q4BlockRText p {
+                width: 100%;
+                font-size: 13px;
+                line-height: 23px;
+
+}
+.headLineL{
+  display: none;
+} 
+.headLineR{
+  display: none;
+}
+.contenth100{
+                width: 100% !important;
+                top: 0;
+                margin: 0;
+                padding-top: 20px;
+
+}
+.q2Block{
+                width: 100%;
+                margin-top: 0;
+                margin-left: 0;
+                left: 0;
+                position: initial;
+} 
+.q2BlockIcon{
+                background: url('../images/ui/q2BlockIcons.png')no-repeat;
+                width: 126px;
+                height: 125px;
+                margin-bottom: 1px;
+
+}
+.q2{
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+}
+.q2BlockText{
+                font-size: 17px !important;
+                margin-bottom: 26px;
+
+}
+.q2BlockTitle {
+                margin-bottom: 5px;
+
+}
+.q3{
+                width: 100%;
+                padding-bottom: 30px;
+                padding-top: 13px !important;
+
+}
+.content{
+                width: 100% !important;
+
+}
+.q3Button{
+                margin-top: 17px;
+
+}
+.q3Blocks{
+                width: 100%;
+                text-align: center;
+}
+.q3Title{
+                margin-bottom: 22px;
+
+}
+.q4{
+                height: 582px;
+                width: 100%;
+
+}
+.q4BlockL{
+                margin: 0;;
+
+}
+.q4Tr{
+                display: none;
+
+}
+.q3BlockIcon1{
+                margin-bottom: 10px;
+
+}
+.q3BlockIcon2{
+                margin-bottom: 10px;
+                margin-top: 10px;
+  
+}
+.q3BlockIcon3{
+                margin-bottom: 10px;
+                margin-top: 10px;
+  
+}
+.q4Blocks{
+                display: none;
+}
+.q4MobileBlocks {
+  display: block;
+  height: 488px;
+  position: relative;
+  margin-right: 0px !important;
+  width: 100%;;;;
+}
+.q5{
+                height: 100%;
+                background-color: #6EAFD4;
+                padding: 0;
+
+}
+.q5tr{
+                display: none;
+
+}
+.q5Text{
+                width: 100%;
+                margin-top: 0;
+
+}
+.q5Icon{
+                margin-top: 22px; 
+}
+.q5Button{
+                margin-top: 36px;
+                position: absolute;
+                z-index: 99;
+                left: 50%;
+                margin-left: -150px;;;
+
+}
+.q5Bot{
+
+}
+.q6{
+                height: 100%;
+                margin-top: 30px;
+}
+.q7{
+  min-height: auto !important;
+}
+.q7Title{
+                width: 100%;
+                text-align: center;
+                margin: 0;
+                margin-bottom: 70px;
+}
+.q7BlockImg{
+                display: none;
+
+}
+.q7BlockIcon1s{
+                width: 100%;
+                margin: 0;
+                margin-left: 9px;
+                display: none;
+                left: 0;
+
+}
+.q7BlockIcon1{
+                background: #35BAE1 !important;
+                padding-top: 22px;
+                margin-left: 0px;
+                width: 100%;
+                left: 0;
+                margin: 0px;
+}
+
+.q7BlockIcon2s{
+                margin: 0;
+                width: 100%;
+                margin-top: 95px;
+                display: none;
+}
+.q7BlockIcon2{
+                margin: 0;
+                margin-top: 95px;
+                background: #35BAE1 !important;
+                padding-top: 24px;
+                left: 0;
+                width: 100%;
+}
+.q7BlockIcon3s{
+                margin: 0;
+                margin-top: 190px;
+                width: 100%;
+                display: none;
+}
+.q7BlockIcon3{
+                margin: 0;
+                margin-top: 190px;
+                padding-top: 21px;
+                left: 0;
+                background: #35BAE1 !important;
+                width: 100%;
+
+}
+.q7Block1{
+                width: 100%;
+                left: 0;
+                margin-left: 0;;;;
+}
+.q7Block1Bg{
+                width: 100%;
+}
+.q7Block1Text{
+                font-size: 14px;
+                line-height: 16px;
+                text-align: center;
+                width: 100%;
+                margin-top: 20px;
+
+}
+.q7Block2{
+                width: 100%;
+                margin-left: -163px;
+}
+.q7Block1Bg{
+                width: 100%;
+}
+.q7Block1Text{
+                font-size: 17px !important;
+                line-height: 16px;
+                text-align: center;
+                width: 100% !important;
+                margin-top: 20px;
+  
+}
+.q7Block3{
+                width: 100%;
+                margin-left: -163px;
+}
+.q7Block1Bg{
+                width: 100%;
+                margin-left: -3px;
+}
+.q7Block1Text{
+                font-size: 14px;
+                line-height: 15px;
+                text-align: center;
+                width: 100%;
+                margin-top: 19px;
+}
+.arrow1{
+                bottom: 2px; 
+}
+.q8{
+                padding: 0;
+                margin-top: 20px;
+                height: auto;
+}
+.q8Title{
+                font-size: 20px;
+                text-align: center;
+                margin-top: 18px;
+                margin-left: 0 !important;
+}
+.q8Text{
+                width: 100% !important;
+                font-size: 15px;
+                text-align: center;
+}
+.calcBlock{
+                width: 100%;
+                height: auto;
+}
+.calcTabs{
+                float: none;
+                margin-top: 15px;
+}
+.calcTitle{
+                float: none;
+                text-align: center;
+                padding-left: 8px;
+}
+.polzunki{
+                margin-top: 27px;;
+}
+.q8Icon{
+                top: 0;
+                left: 0;
+                position: initial;;
+}
+.arrowq9{
+                display: none;
+}
+.q9{
+                width: 100%;margin-top: 567px;margin-left: 0px !important;left: 0;
+}
+.reviewBlock{
+                width: 100%;
+                padding-top: 0px;
+}
+.reviewArrow{
+                margin-left: 0;
+                margin-top: -33px;
+}
+.reviewArrowR{
+                margin-right: 0;
+                margin-top: -46px;;
+}
+.reviewShell{
+                width: 301px;
+                margin-right: 0;
+
+}
+.reviewText{
+                text-align: center;
+                width: 100%;
+}
+.q10{
+                margin-top: 1215px;;
+}
+.q10Form{
+                padding: 13px;
+
+}
+.q10Inp{
+                margin-left: 0 !important;
+                width: 100%;
+                margin-right: 0; 
+}
+.q10Button{
+                margin-left: 0 !important;
+                width: 100%;
+}
+.q10formText{
+                margin-left: 0 !important;
+                width: 100%;
+}
+.q10Contacts{
+                width: 100%;
+
+}
+.q10Img{
+                display: none;
+}
+.q10Bot{
+                width: 100%;
+                left: 0;
+                margin-left: 0;
+                padding: 0;
+                text-align: center;
+                padding-top: 10px;
+                margin-top: 10%;
+                background: #3F3125;; 
+}
+.q10Top{
+                width: 100%;
+                margin-left: 0px;
+                padding: 0;
+                text-align: center;
+                padding-top: 5px;
+                margin-top: 0;
+                background: #3F3125;
+}
+.q10Social{
+                bottom: -22px; 
+}
+.copy{
+                margin-bottom: 20px;
+                width: 100%;
+                left: 0;
+                margin-left: 0;
+                bottom: 0!important;
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+
+}
+@media screen and (max-width: 1050px) {
+.q4BlockL {}
+}
+
+
+@media screen and (max-width: 850px) {
+body{
+  overflow-x:hidden;
+}
+.contenth100 {
+width: 760px;
+}
+.q1 {
+width: 100%;
+text-align: center;
+
+
+}
+.q2BlockTitle{
+font-size: 36px;
+}
+.q2BlockText{
+font-size: 20px;
+}
+.q2BlockIcon {
+
+}
+.q2Block {
+}
+.content{
+width: 760px;
+}
+.q3Title{
+font-size: 25px;
+}
+.q3{
+padding-top: 85px;;
+}
+.q3BlockIcon1 {
+background: url('../images/ui/q3BlockIcon1small.png')no-repeat;
+width: 131px;
+height: 131px;
+}
+.q3BlockIcon2 {
+background: url('../images/ui/q3BlockIcon2small.png')no-repeat;
+width: 131px;
+height: 131px;
+}
+.q3BlockIcon3 {
+background: url('../images/ui/q3BlockIcon3small.png')no-repeat;
+width: 131px;
+height: 131px;
+}
+.q3BlockText{
+font-size: 15px;
+
+}
+.q3Block1{
+width: 250px;
+vertical-align: top;
+
+}
+.q3Block2{
+width: 250px;
+
+}
+.q3Block3{
+width: 250px;
+vertical-align: top;
+}
+.q4BlockR{
+overflow: hidden;
+margin-top: -521px;;
+
+}
+.q4{;
+}
+.q4BlockRTitle{
+font-size: 30px;
+margin: 0 auto;
+margin-left: 92px;
+background: white;
+
+}
+.q4BlockRText{
+margin-left: 98px;
+
+}
+.q4BlockRButton{
+margin-top: 161px;
+margin-left: 98px;
+margin-right: 0px !important;
+
+}
+
+.q4Blocks {
+
+}
+.q7{
+  height:750px;;
+}
+.q7Block{
+  margin-left:-10px;
+
+}
+.q9{
+  margin-left:-377px; 
+}
+.q10Inp {
+  margin-left:109px;
+  margin-bottom:29px;
+}
+.q10Button{
+  margin-left:109px;
+  margin-top:-14px; 
+}
+.q10formText {
+  margin-left:133px;
+  margin-top:20px;
+  color:white;
+}
+.q10 {
+  padding-top:85px; 
+}
+.q10Contacts{
+  margin-top:0px; 
+}
+.q8Text{
+  width:700px;
+  margin-left:17px;
+}
+.q8Title{
+  margin-left:18px;
+}
+.copy{
+  margin-bottom:0;
+}
+.headLineL{
+  width:10%;
+}
+.headLineR{
+  width: 10%;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-height: 300px) and (max-height: 440px){
+  .q5Button{
+    display: none;
+  }
+  .q10Top{
+background: #403225;
+width: 100%;
+  }
+  .q10Bot{
+background: #403225;
+width: 100%;
+padding-top: 14px;
+  }
+
+  .q4BlockRText p{
+width: 100%;
+padding-left: 10px;
+    
+  }
+  .q4{
+height: 148%;
+  }
+
+
+  .q4BlockRText{
+    text-align: center;
+  }
+  .q4BlockRButton{
+margin-top: 35px;
+  }
+  .q4BlockRTitle{
+text-align: center !important;
+width: 100%;
+  }
+  .q4MobileBlocks{
+    width: 93%;
+  }
+.q7BlockIcon1{
+      background: url('../images/ui/q7BlockIcon1Blue.png')no-repeat;
+      padding-top: 25px;
+}
+.q7BlockIcon2{
+      background: url('../images/ui/q7BlockIcon1Blue.png')no-repeat;
+      padding-top: 25px;
+}
+.q7BlockIcon3{
+      background: url('../images/ui/q7BlockIcon1Blue.png')no-repeat;
+      padding-top: 25px;
+}
+.q2Block{
+}
+.q2{
+                height: 125% !important;
+                padding-top: 20px;
+}
+.q3{ 
+}
+.q8Text{
+                width: 100%;
+                margin: 0;
+}
+.q5Bot{
+}
+.q5{
+                height: 495px;
+                padding-top: 20px;
+}
+.q6{
+                margin-top: 0px;
+}
+.arrow1{
+  display: none;
+}
+.q7Block1{
+                left: 0;
+                margin-left: 0;
+}
+.q7Block2{
+                left: 0;
+                margin-left: 0;
+}
+.q7Block3{
+                left: 0;
+                margin-left: 0;
+}
+.q8Icon{
+                margin: 0;
+                left: 50%;
+              
+                margin-top: 50px;
+}
+.q10Social{
+                display: inline-block;
+                bottom: 0;
+                position: relative;
+                top: 142px;
+                left: 153px;
+                right: 0; 
+}
+.copy{
+                left: 0;
+                margin-left: 0px;
+                bottom: -66px;
+                margin-bottom: 10px;
+
+}
+}
+
+
+
+
+@media only screen and (max-width: 500px) and (min-width: 300px){
+                .q8Icon{
+                                margin-top: 60px;
+                                max-width: 100%;
+                                text-align: center;
+                                background: #1B916C;
+                                height: 50px;
+                                padding-top: 18px;
+                                padding-left: 0;
+                                width: auto;
+                                margin-left: 0px;
+                }
+
+.q8Text{
+                width: 100% !important;
+}
+.logo{
+                width: 310px;
+                height: 79px;
+}
+}
+
+
+
+.reviewOver .reviewShell .reviewShell2 .reviewShell3{
+  width: 100%;
+}
+
+#modal_form {
+  width: 100%;  /* Рaзмеры дoлжны быть фиксирoвaны */
+  border-radius: 5px;
+  border: 3px #000 solid;
+  background: transparent;
+  position: fixed; /* чтoбы oкнo былo в видимoй зoне в любoм месте */ /* oтступaем сверху 45%, oстaльные 5% пoдвинет скрипт */ /* пoлoвинa экрaнa слевa */ /* тут вся мaгия центрoвки css, oтступaем влевo и вверх минус пoлoвину ширины и высoты сooтветственнo =) */
+  display: none; /* в oбычнoм сoстoянии oкнa не дoлжнo быть */
+  opacity: 0; /* пoлнoстью прoзрaчнo для aнимирoвaния */
+  z-index: 99999; /* oкнo дoлжнo быть нaибoлее бoльшем слoе */
+  padding: 20px 10px;
+  height: 100%;
+  top: 0;
+}
+/* Кнoпкa зaкрыть для тех ктo в тaнке) */
+#modal_form #modal_close {
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  display: block;
+  color: white;
+}
+/* Пoдлoжкa */
+#overlay {
+  z-index: 3; /* пoдлoжкa дoлжнa быть выше слoев элементoв сaйтa, нo ниже слoя мoдaльнoгo oкнa */
+  position: fixed; /* всегдa перекрывaет весь сaйт */
+  background-color: #000; /* чернaя */
+  opacity: 0.8; /* нo немнoгo прoзрaчнa */
+  width: 100%; 
+  height: 100%; /* рaзмерoм вo весь экрaн */
+  top: 0; 
+  left: 0; /* сверху и слевa 0, oбязaтельные свoйствa! */
+  cursor: pointer;
+  display: none; /* в oбычнoм сoстoянии её нет) */
+}
+
+
+
+
+@media screen and (max-width: 350px) and (max-height: 350px){
+.q2{
+                height: 500px;;
+
+}
+.q4BlockRTitle{
+                width: 100%;
+
+}
+.q5{
+                padding-top: 20px;
+
+}
+.q9{
+                margin-top: 587px;
+
+}
+.reviewBlock{
+  padding-top: 10px;
+}
+.reviewFixed{
+                padding-left: 17px;
+
+}
+.q10Top{
+                top: 0;
+                margin-top: -5px;
+
+}
+}
+
+
+@media screen and (max-width: 321px) and (max-height: 481px) {
+  .q2{
+
+  }
+.q5 {
+  padding-top: 20px;
+}
+.q9{
+                margin-top: 587px;
+}
+.reviewBlock{
+                padding-top: 20px;
+
+}
+}
+
+
+
+.q9 .slick-active {
+background: transparent;
+}
+.q4BlockL .slick-prev, .q4BlockL .slick-next{
+display: none !important;
+}

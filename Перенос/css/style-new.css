@@ -37,30 +37,81 @@
   font-weight: 300; }
 
 .q3 {
-  background-color: #C71188; }
+  background-color: rgba(36, 172, 246, 0.7); }
 
 .q3Button:hover {
-  color: #C71188; }
+  color: rgba(36, 172, 246, 0.7); }
 
 .q4BlockL img {
   width: 50%; }
 
 .q4BlockRButton {
-  color: #C71188;
-  border-color: #C71188; }
+  color: rgba(36, 172, 246, 0.7);
+  border-color: rgba(36, 172, 246, 0.7); }
   .q4BlockRButton:hover {
-    background-color: #C71188; }
+    background-color: rgba(36, 172, 246, 0.7); }
 
 .slick-active {
-  background-color: #C71188; }
+  background-color: rgba(36, 172, 246, 0.7); }
 
 .reviewArrow, .reviewArrowR, .reviewLine {
-  background-color: #C71188; }
+  background-color: rgba(36, 172, 246, 0.7); }
+  .reviewArrow:hover, .reviewArrowR:hover, .reviewLine:hover {
+    background-color: #24acf6; }
 
 .reviewName {
-  color: #C71188; }
+  color: rgba(36, 172, 246, 0.7); }
 
 .q10 {
   height: 700px; }
+
+.b-days-container:after {
+  visibility: hidden;
+  display: block;
+  content: "";
+  clear: both;
+  height: 0; }
+.b-days-container .e-day, .b-days-container .e-day-right {
+  background-image: url("../images/index/btn-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  text-align: center;
+  letter-spacing: 4px;
+  word-spacing: 3px;
+  float: left;
+  margin-left: 17%;
+  color: #fff;
+  padding: 3px 31px; }
+.b-days-container .e-day-right {
+  float: right;
+  margin-left: 0;
+  margin-right: 17%; }
+
+.b-img {
+  display: inline-block;
+  vertical-align: top; }
+  .b-img img {
+    width: 100%; }
+
+.q8 {
+  text-align: center; }
+  .q8 .b-img {
+    margin-top: 14%; }
+
+@media (max-width: 767px) {
+  .q8 .b-img {
+    margin-top: 10%;
+    width: 90%; }
+  .q8 .b-days-container {
+    margin-bottom: 10%; } }
+@media (max-width: 480px) {
+  .q8 .b-days-container .e-day, .q8 .b-days-container .e-day-right {
+    margin-left: 15px; }
+  .q8 .b-days-container .e-day-right {
+    margin-right: 15px; } }
 
 /*# sourceMappingURL=style-new.css.map */

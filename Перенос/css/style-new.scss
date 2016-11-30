@@ -1,4 +1,5 @@
-$global: #C71188;
+$global: rgba(36, 172, 246, .7);
+$global-f: rgba(36, 172, 246, 1);
 
 @mixin clearfix {
   &:after {
@@ -87,6 +88,9 @@ $global: #C71188;
 
 .reviewArrow, .reviewArrowR, .reviewLine{
   background-color: $global;
+  &:hover{
+    background-color: $global-f;
+  }
 }
 
 .reviewName{
@@ -95,4 +99,70 @@ $global: #C71188;
 
 .q10{
   height: 700px;
+}
+
+.b-days-container{
+  @include clearfix();
+  .e-day{
+    background-image: url("../images/index/btn-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    text-align: center;
+    letter-spacing: 4px;
+    word-spacing: 3px;
+    float: left;
+    margin-left: 17%;
+    color: #fff;
+    padding: 3px 31px;
+  }
+  .e-day-right{
+    @extend .e-day;
+    float: right;
+    margin-left: 0;
+    margin-right: 17%;
+  }
+}
+
+.b-img{
+  display: inline-block;
+  vertical-align: top;
+  img{
+    width: 100%;
+  }
+}
+
+.q8{
+  text-align: center;
+  .b-img{
+    margin-top: 14%;
+  }
+}
+
+@media (max-width: 767px) {
+  .q8{
+    .b-img{
+      margin-top: 10%;
+      width: 90%;
+    }
+    .b-days-container{
+      margin-bottom: 10%;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .q8{
+    .b-days-container{
+      .e-day{
+        margin-left: 15px;
+      }
+      .e-day-right{
+        margin-right: 15px;
+      }
+    }
+  }
 }

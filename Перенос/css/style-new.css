@@ -42,8 +42,35 @@
 .q3Button:hover {
   color: rgba(36, 172, 246, 0.7); }
 
-.q4BlockL img {
-  width: 50%; }
+.q4 {
+  height: 505px; }
+  .q4 .slick-slide:after, .q4 .content:after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0; }
+  .q4 .q4BlockRButton {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 0 !important;
+    margin-right: 0 !important;
+    margin-left: 0 !important; }
+  .q4 .q4BlockRButton-container {
+    text-align: center;
+    float: right;
+    width: 50%; }
+  .q4 .q4BlockL {
+    position: relative; }
+  .q4 .slick-dots {
+    text-align: center;
+    position: relative;
+    bottom: auto;
+    left: auto; }
+  .q4 .q4-container-img {
+    width: 50%;
+    float: left;
+    text-align: center; }
 
 .q4BlockRButton {
   color: rgba(36, 172, 246, 0.7);
@@ -107,11 +134,20 @@
     margin-top: 10%;
     width: 90%; }
   .q8 .b-days-container {
-    margin-bottom: 10%; } }
+    margin-bottom: 10%; }
+
+  .q4 {
+    display: none !important; }
+
+  .q5 {
+    margin-top: 0; } }
 @media (max-width: 480px) {
   .q8 .b-days-container .e-day, .q8 .b-days-container .e-day-right {
     margin-left: 15px; }
   .q8 .b-days-container .e-day-right {
     margin-right: 15px; } }
+@media (max-height: 440px) {
+  .q4 {
+    display: none !important; } }
 
 /*# sourceMappingURL=style-new.css.map */

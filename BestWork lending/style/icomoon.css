@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('../fonts/icomoon.eot?3wov81');
+    src:    url('../fonts/icomoon.eot?3wov81#iefix') format('embedded-opentype'),
+                 url('../fonts/icomoon.ttf?3wov81') format('truetype'),
+                 url('../fonts/icomoon.woff?3wov81') format('woff'),
+                 url('../fonts/icomoon.svg?3wov81#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+i {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-popup_form_closecopy:before {
+    content: "\e921";
+}
+.icon-form_successful_strokecopy:before {
+    content: "\e922";
+}
+.icon-form_successfulcopy:before {
+    content: "\e923";
+}
+.icon-sheme_road_3-4copy:before {
+    content: "\e913";
+}
+.icon-sheme_road_2-3copy:before {
+    content: "\e914";
+}
+.icon-sheme_road_1-2copy:before {
+    content: "\e915";
+}
+.icon-addcopy:before {
+    content: "\e900";
+}
+.icon-add:before {
+    content: "\e901";
+}
+.icon-arrow_greycopy:before {
+    content: "\e902";
+}
+.icon-arrow_whitecopy:before {
+    content: "\e903";
+}
+.icon-circle_map_ukrainecopy:before {
+    content: "\e904";
+}
+.icon-contacts_locationcopy:before {
+    content: "\e905";
+}
+.icon-contacts_mailcopy:before {
+    content: "\e906";
+}
+.icon-contacts_phonecopy:before {
+    content: "\e907";
+}
+.icon-donecopy:before {
+    content: "\e908";
+}
+.icon-feedbackcopy:before {
+    content: "\e909";
+}
+.icon-feedback_2copy:before {
+    content: "\e90a";
+}
+.icon-feedback_3copy:before {
+    content: "\e90b";
+}
+.icon-feedback_4copy:before {
+    content: "\e90c";
+}
+.icon-form_logincopy:before {
+    content: "\e90d";
+}
+.icon-form_phonecopy:before {
+    content: "\e90e";
+}
+.icon-sheme_1copy:before {
+    content: "\e90f";
+}
+.icon-sheme_2copy:before {
+    content: "\e910";
+}
+.icon-sheme_3copy:before {
+    content: "\e911";
+}
+.icon-sheme_4copy:before {
+    content: "\e912";
+}
+.icon-social_fbcopy:before {
+    content: "\e916";
+}
+.icon-social_gcopy:before {
+    content: "\e917";
+}
+.icon-social_vkcopy:before {
+    content: "\e918";
+}
+.icon-video_arrow_leftcopy:before {
+    content: "\e919";
+}
+.icon-video_arrow_rightcopy:before {
+    content: "\e91a";
+}
+.icon-video_pausecopy:before {
+    content: "\e91b";
+}
+.icon-why_we_copy:before {
+    content: "\e91c";
+}
+.icon-why_we_1copy:before {
+    content: "\e91d";
+}
+.icon-why_we_2copy:before {
+    content: "\e91e";
+}
+.icon-why_we_5copy:before {
+    content: "\e91f";
+}
+.icon-why_we_6copy:before {
+    content: "\e920";
+}
+

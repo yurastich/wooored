@@ -57,6 +57,26 @@ p, h1, h2, h3, h4, span, input, img {
   text-transform: uppercase !important;
 }
 
+.m-container-select{
+  position: relative;
+  &:before{
+    content: "\f0d7";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    top: calc(50% - 13px);
+    right: 20px;
+    font-size: 27px;
+    color: #d9d9d9;
+  }
+  .b-input{
+    padding-right: 35px;
+  }
+}
+
 // todo Buttons
 .b-button {
   height:           95px;
@@ -336,6 +356,11 @@ p, h1, h2, h3, h4, span, input, img {
     text-shadow: 0px 0px 12.61px rgba(0, 0, 0, 1);
     //height:      431px !important;
   }
+  &.m-first-scr-st{
+    .e-first-container {
+      padding: 30px 0;
+    }
+  }
   .e-first-title {
     font-size:      46px;
     line-height:    58px;
@@ -527,8 +552,8 @@ p, h1, h2, h3, h4, span, input, img {
     padding-top:    15px;
     .e-about-text-num{
       display: block;
-      font-size: 20px;
-      line-height: 22px;
+      font-size: 50px;
+      line-height: 62px;
     }
   }
 }
@@ -978,6 +1003,18 @@ p, h1, h2, h3, h4, span, input, img {
   &:hover {
     .e-news-title-container {
       @include transform(scale(1.2));
+    }
+  }
+}
+
+.b-audio-list{
+  .b-near{
+    .c{
+      padding: 0 20px;
+      .e-near-text{
+        background-color: #fff;
+        color: $grey;
+      }
     }
   }
 }
@@ -1594,6 +1631,11 @@ p, h1, h2, h3, h4, span, input, img {
         height: auto;
       }
     }
+    &.m-question-item-light{
+      .e-question-text{
+        color: $pink;
+      }
+    }
   }
   .e-question-text {
     font-size:        14px;
@@ -1605,6 +1647,7 @@ p, h1, h2, h3, h4, span, input, img {
     padding-right:    39px;
     cursor:           pointer;
     background-color: #ffffff;
+    @include transition-def();
     &:before {
       content:                 "\f0d7";
       display:                 inline-block;
@@ -2195,6 +2238,14 @@ p, h1, h2, h3, h4, span, input, img {
 }
 
 @media (max-width: 1100px) {
+  .b-about-list{
+    .e-about-text{
+      .e-about-text-num{
+        font-size: 40px;
+        line-height: 52px;
+      }
+    }
+  }
   .b-nav-list {
     .e-nav-link {
       padding: 11px 10px 9px;
@@ -2355,6 +2406,14 @@ p, h1, h2, h3, h4, span, input, img {
     &.m-arrow-slider-left {
       right: auto;
       left: 0;
+    }
+  }
+  .b-about-list{
+    .e-about-text{
+      .e-about-text-num{
+        font-size: 30px;
+        line-height: 42px;
+      }
     }
   }
   .b-social {

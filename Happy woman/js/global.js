@@ -145,20 +145,16 @@ $(document).ready(function () {
       heightScreen = $(window).height(),
         widthScreen = $(window).width(),
       heightFirstFooter = $(".b-first-footer").outerHeight(),
-      cont = heightScreen - header - heightFirstFooter;
-    if (heightScreen >= 700) {
-      if(widthScreen>= 760){
-        $(".e-first-container").css("height", cont);
-      }else{
-        $(".e-first-container").css({
-          "height": "auto",
-          "padding-bottom": "30px"
-        });
-      }
+      cont = heightScreen - header - heightFirstFooter,
+      contOld = $(".e-first-container").outerHeight();
+
+    if (cont >= contOld) {
+      $(".b-first").removeClass("m-first-scr-st");
+      $(".e-first-container").css("height", cont);
     } else {
+      $(".b-first").addClass("m-first-scr-st");
       $(".e-first-container").css({
         "height": "auto",
-        "padding-bottom": "30px"
       });
     }
 
@@ -230,11 +226,21 @@ $(document).ready(function () {
     par.addClass("active");
   });
 
+  $('.b-question-block .b-input').blur(function(){
+    var textNow = $(this).val(),
+        par = $(this).closest(".e-question-item");
+    if(textNow !== ''){
+      par.addClass("m-question-item-light")
+    }else{
+      par.removeClass("m-question-item-light")
+    }
+  });
+
   var nearSlider = new Swiper('.e-near-container .swiper-container', {
     scrollbar: '.swiper-scrollbar',
     scrollbarHide: false,
     slidesPerView: 4,
-    centeredSlides: true,
+
     spaceBetween: 30,
     grabCursor: true,
     nextButton: '.js-near-right',

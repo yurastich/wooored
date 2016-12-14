@@ -14,7 +14,8 @@
 <div class="wrap">
   <div class="b-overlay"></div>
   <div class="b-popup-overlay" data-modal="1">
-    <form class="b-form">
+    <form id="form1" method="POST" action="javascript:void(null);" class="b-form">
+      <input type="text" name="when" class="hidden" value="Хедер">
       <p class="e-form-title">
         Закажите
         <span class="t-green">5 пачек NIKOTINNET</span>
@@ -25,18 +26,195 @@
         в подарок
       </p>
       <div class="b-input-container">
-        <input type="text" class="b-input" placeholder="Ваше имя">
+        <input type="text" class="b-input" name="name" placeholder="Ваше имя">
       </div>
       <div class="b-input-container">
-        <input type="text" class="b-input" placeholder="Ваш телефон">
+        <input type="text" class="b-input" name="num" placeholder="Ваш телефон">
       </div>
-      <div class="e-form-text-check b-circle-container"><div class="b-circle m-circle-sm"></div>Хочу оплатить заказ on-line</div>
-      <button class="b-button m-button-big m-100 anim">
+
+      <div class="b-check">
+        <input type="checkbox" name="check" id="ch1" value="Хочу оплатить заказ on-line">
+        <label for="ch1" class="e-form-text-check b-circle-container">
+          <div class="b-circle m-circle-sm"></div>
+          Хочу оплатить заказ on-line
+        </label>
+      </div>
+
+      <button type="submit" class="b-button m-button-big m-100 anim">
                                         <span class="e-button-container">
                                             <span class="t"><span class="c"><span class="e-button-text">заказать</span></span></span>
                                         </span>
       </button>
     </form>
+  </div>
+  <div class="b-popup-overlay" data-modal="6">
+    <form id="form2" method="POST" action="javascript:void(null);" class="b-form">
+      <input type="text" name="when" class="hidden" value="Купить 1 пачку со скидкой">
+      <p class="e-form-title">
+        Закажите
+        <span class="t-green">5 пачек NIKOTINNET</span>
+        получите
+        <span class="t-green">50% скидки</span>
+        и зубную пасту
+        <span class="t-green">"Niko dentin"</span>
+        в подарок
+      </p>
+      <div class="b-input-container">
+        <input type="text" class="b-input" name="name" placeholder="Ваше имя">
+      </div>
+      <div class="b-input-container">
+        <input type="text" class="b-input" name="num" placeholder="Ваш телефон">
+      </div>
+      <div class="b-check">
+        <input type="checkbox" name="check" id="ch2" value="Хочу оплатить заказ on-line">
+        <label for="ch2" class="e-form-text-check b-circle-container">
+          <div class="b-circle m-circle-sm"></div>
+          Хочу оплатить заказ on-line
+        </label>
+      </div>
+      <button type="submit" class="b-button m-button-big m-100 anim">
+                                        <span class="e-button-container">
+                                            <span class="t"><span class="c"><span class="e-button-text">заказать</span></span></span>
+                                        </span>
+      </button>
+    </form>
+  </div>
+  <div class="b-popup-overlay" data-modal="7">
+    <form id="form3" method="POST" action="javascript:void(null);" class="b-form">
+      <input type="text" name="when" class="hidden" value="Заказать пачку со скидкой">
+      <p class="e-form-title">
+        Закажите
+        <span class="t-green">5 пачек NIKOTINNET</span>
+        получите
+        <span class="t-green">50% скидки</span>
+        и зубную пасту
+        <span class="t-green">"Niko dentin"</span>
+        в подарок
+      </p>
+      <div class="b-input-container">
+        <input type="text" class="b-input" name="name" placeholder="Ваше имя">
+      </div>
+      <div class="b-input-container">
+        <input type="text" class="b-input" name="num" placeholder="Ваш телефон">
+      </div>
+      <div class="b-check">
+        <input type="checkbox" name="check" id="ch3" value="Хочу оплатить заказ on-line">
+        <label for="ch3" class="e-form-text-check b-circle-container">
+          <div class="b-circle m-circle-sm"></div>
+          Хочу оплатить заказ on-line
+        </label>
+      </div>
+      <button type="submit" class="b-button m-button-big m-100 anim">
+                                        <span class="e-button-container">
+                                            <span class="t"><span class="c"><span class="e-button-text">заказать</span></span></span>
+                                        </span>
+      </button>
+    </form>
+  </div>
+  <div class="b-popup-overlay" data-modal="8">
+    <form id="form4" method="POST" action="javascript:void(null);" class="b-form">
+      <input type="text" name="when" class="hidden" value="Заказать">
+      <p class="e-form-title">
+        Закажите
+        <span class="t-green">5 пачек NIKOTINNET</span>
+        получите
+        <span class="t-green">50% скидки</span>
+        и зубную пасту
+        <span class="t-green">"Niko dentin"</span>
+        в подарок
+      </p>
+      <div class="b-input-container">
+        <input type="text" class="b-input" name="name" placeholder="Ваше имя">
+      </div>
+      <div class="b-input-container">
+        <input type="text" class="b-input" name="num" placeholder="Ваш телефон">
+      </div>
+      <div class="b-check">
+        <input type="checkbox" name="check" id="ch4" value="Хочу оплатить заказ on-line">
+        <label for="ch4" class="e-form-text-check b-circle-container">
+          <div class="b-circle m-circle-sm"></div>
+          Хочу оплатить заказ on-line
+        </label>
+      </div>
+      <button type="submit" class="b-button m-button-big m-100 anim">
+                                        <span class="e-button-container">
+                                            <span class="t"><span class="c"><span class="e-button-text">заказать</span></span></span>
+                                        </span>
+      </button>
+    </form>
+  </div>
+  <div class="b-popup-overlay" data-modal="9">
+    <form id="form5" method="POST" action="javascript:void(null);" class="b-form">
+      <input type="text" name="when" class="hidden" value="Футер">
+      <p class="e-form-title">
+        Закажите
+        <span class="t-green">5 пачек NIKOTINNET</span>
+        получите
+        <span class="t-green">50% скидки</span>
+        и зубную пасту
+        <span class="t-green">"Niko dentin"</span>
+        в подарок
+      </p>
+      <div class="b-input-container">
+        <input type="text" class="b-input" name="name" placeholder="Ваше имя">
+      </div>
+      <div class="b-input-container">
+        <input type="text" class="b-input" name="num" placeholder="Ваш телефон">
+      </div>
+      <div class="b-check">
+        <input type="checkbox" name="check" id="ch5" value="Хочу оплатить заказ on-line">
+        <label for="ch5" class="e-form-text-check b-circle-container">
+          <div class="b-circle m-circle-sm"></div>
+          Хочу оплатить заказ on-line
+        </label>
+      </div>
+      <button type="submit" class="b-button m-button-big m-100 anim">
+                                        <span class="e-button-container">
+                                            <span class="t"><span class="c"><span class="e-button-text">заказать</span></span></span>
+                                        </span>
+      </button>
+    </form>
+  </div>
+  <!-- Text popup -->
+  <div class="b-popup-overlay m-popup-overlay-text" data-modal="2">
+    <div class="b-popup">
+      <h2 class="b-title">Аир болотный</h2>
+      <p class="e-popup-text">При курении никотин, соединившись со слюной, попадает в желудок и действует раздражающе на
+        его стенку, что приводит к хроническому воспалению желудка. 98 % курильщиков страдают гастритом и язвенной
+        болезнью желудка.</p>
+      <p class="e-popup-text">Аир, выступая как мощное противовоспалительное средство, способствует регенерации
+        слизистых, улучшает пищеварение, оказывает нормализующее влияние на процессы торможения и возбуждения нервной
+        системы, улучшает функции половой сферы. Оказывает антисклеротическое действие, омолаживает организм. Является
+        общепризнанным фитопрепаратом во многих странах мира для снижения никотиновой зависимости. В ДД «NICOTIN.NET»
+        аир содержится в форме порошка в таблетированной форме, что существенно облегчает прием в любом месте.</p>
+    </div>
+  </div>
+  <div class="b-popup-overlay m-popup-overlay-text" data-modal="3">
+    <div class="b-popup">
+      <h2 class="b-title">МКЦ (микрокристаллическая целлюлоза)</h2>
+      <p class="e-popup-text">На протяжении всего желудочно-кишечного тракта сорбирует (поглощает) вредные для организма
+        вещества, тяжелые металлы, радионуклиды, являясь «метлой» для организма.</p>
+    </div>
+  </div>
+  <div class="b-popup-overlay m-popup-overlay-text" data-modal="4">
+    <div class="b-popup">
+      <h2 class="b-title">Мята перечная</h2>
+      <p class="e-popup-text">Нормализует деятельность нервной системы, снимает психическое напряжение, уменьшает
+        желание закурить. Ментол, содержащийся в листьях мяты, обладает спазмолитическим и антисептическим действием,
+        что оказывает положительное влияние на слизистую оболочку бронхов и трахеи, ослабленную в результате курения,
+        облегчает отхождение мокроты; рефлекторно расширяя коронарные сосуды, улучшает кровоснабжение сердца и
+        легких.</p>
+    </div>
+  </div>
+  <div class="b-popup-overlay m-popup-overlay-text" data-modal="5">
+    <div class="b-popup">
+      <h2 class="b-title">Овес посевной</h2>
+      <p class="e-popup-text">Издавна применяется в народной медицине как успокаивающее средство при нервном истощении,
+        бессоннице, усталости и физических перегрузках, а также для очищения организма. По мнению многих исследователей,
+        препараты из надземной зелёной части овса помогают бросить курить, освобождают курильщиков от никотиновой
+        зависимости. Антиникотиновое действие зелёной травы овса обнаружили ученые из Индии. При использовании внутрь у
+        заядлых курильщиков снижается тяга к табакокурению.</p>
+    </div>
   </div>
 
 
@@ -174,9 +352,17 @@
                   </a>
                 </div>
                 <div class="b-spec-text-container">
-                  <p class="e-spec-text"><span class="f-m">Цена:</span> <span class="b-line-text">250 грн</span></p>
-                  <p class="e-spec-text"><span class="f-m">Сегодня :</span> <span class="t-orange">скидка <span class="e-spec-text-sm">до</span> 50%</span></p>
-                  <p class="e-spec-text m-spec-text-last"><span class="t-orange">+ Зубная паста<span class="t-upper">В ПОДАРОК</span></span></p>
+                  <p class="e-spec-text">
+                    <span class="f-m">Цена:</span>
+                    <span class="b-line-text">250 грн</span>
+                  </p>
+                  <p class="e-spec-text">
+                    <span class="f-m">Сегодня :</span>
+                    <span class="t-orange">скидка <span class="e-spec-text-sm">до</span> 50%</span>
+                  </p>
+                  <p class="e-spec-text m-spec-text-last">
+                    <span class="t-orange">+ Зубная паста<span class="t-upper">В ПОДАРОК</span></span>
+                  </p>
                 </div>
               </div>
             </div>
@@ -188,13 +374,16 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <button href="#9" class="b-button m-button-big anim">
+            <a href="#9" class="b-button m-button-big anim">
                                         <span class="e-button-container">
                                             <span class="t"><span class="c"><span
                                                 class="e-button-text">расчитать недельный курс</span></span></span>
                                         </span>
-            </button>
-            <h2 class="b-title"><span class="t-green">Проверьте себя!</span> Хотя бы 1 симптом совпадает?</h2>
+            </a>
+            <h2 class="b-title">
+              <span class="t-green">Проверьте себя!</span>
+              Хотя бы 1 симптом совпадает?
+            </h2>
             <div class="e-second-list-container">
               <ul class="b-easy-list">
                 <li class="e-easy-item b-circle-container">
@@ -233,7 +422,9 @@
                 </li>
               </ul>
             </div>
-            <h2 class="b-title m-title-without-line"><span class="t-green">ЭТИ СИМПТОМЫ НЕЛЬЗЯ ИГНОРИРОВАТЬ!</span></h2>
+            <h2 class="b-title m-title-without-line">
+              <span class="t-green">ЭТИ СИМПТОМЫ НЕЛЬЗЯ ИГНОРИРОВАТЬ!</span>
+            </h2>
             <div class="b-info-label">
               <span class="e-info-label-text"><span class="e-info-label-big-text t-upper">Важно знать!</span></span>
             </div>
@@ -263,15 +454,22 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h2 class="b-title"><span class="t-green">NICOTINNET</span> — комплексный подход в борьбе с курением</h2>
+            <h2 class="b-title">
+              <span class="t-green">NICOTINNET</span>
+              — комплексный подход в борьбе с курением
+            </h2>
           </div>
           <div class="col-lg-6">
             <div class="b-text-block">
               <div class="e-text-block-container">
-                <p class="e-text-block-text">ТМ «Кортес» разработала уникальный по составу и эффективности комплексный препарат  NIKOTINNET  — таблетки для рассасывания и зубную пасту NICODENTIN на растительной основе.</p>
-                <p class="e-text-block-text">Оказывая действие на вкусовые рецепторы  и психоэмоциональное состояние, препарат помогает справиться с любой степенью зависимости от никотина!</p>
+                <p class="e-text-block-text">ТМ «Кортес» разработала уникальный по составу и эффективности комплексный
+                  препарат NIKOTINNET — таблетки для рассасывания и зубную пасту NICODENTIN на растительной основе.</p>
+                <p class="e-text-block-text">Оказывая действие на вкусовые рецепторы и психоэмоциональное состояние,
+                  препарат помогает справиться с любой степенью зависимости от никотина!</p>
                 <div class="b-button-container">
-                  <a href="#" class="b-button m-button-sm m-button-little">
+                  <a target="_blank"
+                     href="https://vk.com/doc30051796_439745847?hash=e1f65083cfa74d5738&dl=21ebf4519ad1ad4bdf"
+                     class="b-button m-button-sm m-button-little">
                     <span class="e-button-container"><span class="t"><span class="c"><span class="e-button-text">смотреть аннотацию</span></span></span></span>
                   </a>
                 </div>
@@ -282,23 +480,23 @@
             <ul class="b-img-text-list">
               <li class="e-img-text-item">
                 <p class="e-img-text">Аир болотный</p>
-                <div class="b-img" style="background-image: url('img/img1.png')">
+                <div class="b-img" data-button="2" style="background-image: url('img/img1.png')">
                 </div>
               </li>
               <li class="e-img-text-item">
                 <p class="e-img-text">Микрокристаллическая
                   целлюлоза</p>
-                <div class="b-img" style="background-image: url('img/img2.png')">
+                <div class="b-img" data-button="3" style="background-image: url('img/img2.png')">
                 </div>
               </li>
               <li class="e-img-text-item">
                 <p class="e-img-text">Мята перечная</p>
-                <div class="b-img" style="background-image: url('img/img3.png')">
+                <div class="b-img" data-button="4" style="background-image: url('img/img3.png')">
                 </div>
               </li>
               <li class="e-img-text-item">
                 <p class="e-img-text">Овес посевной</p>
-                <div class="b-img" style="background-image: url('img/img4.png')">
+                <div class="b-img" data-button="5" style="background-image: url('img/img4.png')">
                 </div>
               </li>
             </ul>
@@ -310,28 +508,34 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h2 class="b-title">Механизм воздействия таблеток <span class="t-green">NICOTINNET</span></h2>
+            <h2 class="b-title">Механизм воздействия таблеток
+              <span class="t-green">NICOTINNET</span>
+            </h2>
             <ul class="b-mech-list">
               <li class="e-mech-item">
-                <p class="e-mech-text">Нормализуется сон и психоэмоциональное состояние  за счет воздействия растительных успокоительных</p>
+                <p class="e-mech-text">Нормализуется сон и психоэмоциональное состояние за счет воздействия растительных
+                  успокоительных</p>
                 <div class="b-img">
                   <img src="img/b1.png" alt="">
                 </div>
               </li>
               <li class="e-mech-item">
-                <p class="e-mech-text">Снижается тяга к курению, за счет  стимулирования выработки организмом собственного никотина.</p>
+                <p class="e-mech-text">Снижается тяга к курению, за счет стимулирования выработки организмом
+                  собственного никотина.</p>
                 <div class="b-img">
                   <img src="img/b3.png" alt="">
                 </div>
               </li>
               <li class="e-mech-item">
-                <p class="e-mech-text">Организм насыщается кислородом, за счет очищения  альвеол от  смол и нормализации работы дыхательного аппарата.</p>
+                <p class="e-mech-text">Организм насыщается кислородом, за счет очищения альвеол от смол и нормализации
+                  работы дыхательного аппарата.</p>
                 <div class="b-img">
                   <img src="img/b2.png" alt="">
                 </div>
               </li>
               <li class="e-mech-item">
-                <p class="e-mech-text">Улучшается пищеварение, нормализуется процесс усваивания полезных веществ, за счет нормализации работы ЖКТ, повышается метаболизм и снижается риск набора лишнего веса.</p>
+                <p class="e-mech-text">Улучшается пищеварение, нормализуется процесс усваивания полезных веществ, за
+                  счет нормализации работы ЖКТ, повышается метаболизм и снижается риск набора лишнего веса.</p>
                 <div class="b-img">
                   <img src="img/b4.png" alt="">
                 </div>
@@ -343,7 +547,7 @@
                                             <span class="t"><span class="c"><span class="e-button-text">расчитать недельный курс</span></span></span>
                                         </span>
               </a>
-              <button class="b-button m-button-big m-button-orange pull-right anim" data-button="2">
+              <button class="b-button m-button-big m-button-orange pull-right anim" data-button="6">
                                         <span class="e-button-container">
                                             <span class="t"><span class="c"><span class="e-button-text">купить 1 пачку со скидкой</span></span></span>
                                         </span>
@@ -360,18 +564,27 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h2 class="b-title"><span class="t-green">NICOTINNET</span> — зубная паста с уникальным эффектом</h2>
+            <h2 class="b-title">
+              <span class="t-green">NICOTINNET</span>
+              — зубная паста с уникальным эффектом
+            </h2>
           </div>
           <div class="col-lg-8">
             <div class="b-text-block">
               <div class="e-text-block-container">
-                <p class="e-text-block-text">Благодаря своему мягкому составу зубная паста NIKODENTIN способствует мягкому и спокойному отвыканию от сигарет. Прекрасно очищает ротовую полость, освежает дыхание и усиливает реминерализацию эмали, укрепляя ее и устраняя появления кариозных пятен.</p>
-                <p class="b-title m-title-without-line"><span class="t-green">Эффект гарантирован!</span></p>
-                <p class="e-text-block-text">Во время чистки зубов активный комплекс формирует подсознательное отвращение ко вкусу и запаху табака на несколько часов. Чем дольше и чаще Вы будет использовать зубную пасту, тем быстрее сможете избавиться от никотиновой зависимости!</p>
+                <p class="e-text-block-text">Благодаря своему мягкому составу зубная паста NIKODENTIN способствует
+                  мягкому и спокойному отвыканию от сигарет. Прекрасно очищает ротовую полость, освежает дыхание и
+                  усиливает реминерализацию эмали, укрепляя ее и устраняя появления кариозных пятен.</p>
+                <p class="b-title m-title-without-line">
+                  <span class="t-green">Эффект гарантирован!</span>
+                </p>
+                <p class="e-text-block-text">Во время чистки зубов активный комплекс формирует подсознательное
+                  отвращение ко вкусу и запаху табака на несколько часов. Чем дольше и чаще Вы будет использовать зубную
+                  пасту, тем быстрее сможете избавиться от никотиновой зависимости!</p>
               </div>
             </div>
             <div class="b-button-container">
-              <button class="b-button m-button-big anim">
+              <button class="b-button m-button-big anim" data-button="7">
                                         <span class="e-button-container">
                                             <span class="t"><span class="c"><span class="e-button-text">Заказать пасту со кидкой</span></span></span>
                                         </span>
@@ -392,7 +605,10 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h2 class="b-title">Бросить курить с комплексом <span class="t-green">NIKOTINNET</span> очень просто!</h2>
+            <h2 class="b-title">Бросить курить с комплексом
+              <span class="t-green">NIKOTINNET</span>
+              очень просто!
+            </h2>
             <ul class="b-img-text-list">
               <li class="e-img-text-item">
                 <div class="b-img" style="background-image: url('img/i1.png')"></div>
@@ -408,7 +624,7 @@
                 <div class="b-img" style="background-image: url('img/i3.png')"></div>
                 <p class="e-img-text">По достижению максимум 30 дней
                   Вы получите устойчивый эффект
-                  и не захотите  вернуться к сигаретам</p>
+                  и не захотите вернуться к сигаретам</p>
               </li>
             </ul>
           </div>
@@ -421,8 +637,13 @@
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div id="9" class="b-text-block b-calc">
               <div class="e-text-block-container">
-                <h2 class="b-title">Рассчитайте свой недельный курс <span class="t-green">NICOTINNET</span> прямо сейчас!</h2>
-                <div class="e-calc-attention"><span class="e-calc-attention-text">Сколько сигарет Вы выкуриваете в день?</span></div>
+                <h2 class="b-title">Рассчитайте свой недельный курс
+                  <span class="t-green">NICOTINNET</span>
+                  прямо сейчас!
+                </h2>
+                <div class="e-calc-attention">
+                  <span class="e-calc-attention-text">Сколько сигарет Вы выкуриваете в день?</span>
+                </div>
                 <ul class="b-calc-list">
                   <li class="e-calc-item active">
                     <a href="#calc" class="t">
@@ -461,22 +682,34 @@
           <li class="e-var-item">
             <div class="row">
               <div class="col-lg-12">
-                <p class="b-title">Ваш минимальный курс —  <span class="t-green"> 1-2  пачки таблеток</span> для рассасывания <span class="t-green">NICOTINNET</span></p>
+                <p class="b-title">Ваш минимальный курс —
+                  <span class="t-green"> 1-2  пачки таблеток</span>
+                  для рассасывания
+                  <span class="t-green">NICOTINNET</span>
+                </p>
               </div>
               <div class="col-lg-8">
                 <div class="b-desc-text">
-                  <div class="e-desc-left"><span class="e-desc-left-text">Цена курса:</span> <span class="e-desc-left-big-text"><span class="b-line-text">430</span> <span class="e-desc-text-new"><span class="t-green">344 ГРН</span> <span class="t-orange">за 2 пачки</span></span></span></div>
+                  <div class="e-desc-left">
+                    <span class="e-desc-left-text">Цена курса:</span>
+                    <span class="e-desc-left-big-text"><span class="b-line-text">430</span> <span
+                        class="e-desc-text-new"><span class="t-green">344 ГРН</span> <span
+                        class="t-orange">за 2 пачки</span></span></span>
+                  </div>
                 </div>
                 <div class="row b-view">
                   <div class="col-lg-12">
                     <div class="e-view-card m-view-big" style="background-image: url('img/only-drug.png')">
-                      <div class="e-view-card-text"><span class="t-green">х 2</span></div>
+                      <div class="e-view-card-text">
+                        <span class="t-green">х 2</span>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4">
-                <form class="b-form m-form-tree">
+                <form id="form13" method="POST" action="javascript:void(null);" class="b-form m-form-tree">
+                  <input type="text" name="when" class="hidden" value="Калькулятор - 2 пачки">
                   <p class="e-form-title">
                     Закажите
                     <span class="t-green">2 пачеки NIKOTINNET</span>
@@ -485,13 +718,19 @@
                     скидки на заказ!
                   </p>
                   <div class="b-input-container">
-                    <input type="text" class="b-input" placeholder="Ваше имя">
+                    <input type="text" class="b-input" name="name" placeholder="Ваше имя">
                   </div>
                   <div class="b-input-container">
-                    <input type="text" class="b-input" placeholder="Ваш телефон">
+                    <input type="text" class="b-input" name="num" placeholder="Ваш телефон">
                   </div>
-                  <div class="e-form-text-check b-circle-container"><div class="b-circle m-circle-sm"></div>Хочу оплатить заказ on-line</div>
-                  <button class="b-button m-button-big m-100 anim">
+                  <div class="b-check">
+                    <input type="checkbox" name="check" id="ch44" value="Хочу оплатить заказ on-line">
+                    <label for="ch44" class="e-form-text-check b-circle-container">
+                      <div class="b-circle m-circle-sm"></div>
+                      Хочу оплатить заказ on-line
+                    </label>
+                  </div>
+                  <button type="submit" class="b-button m-button-big m-100 anim">
                                         <span class="e-button-container">
                                             <span class="t"><span class="c"><span class="e-button-text">заказать</span></span></span>
                                         </span>
@@ -503,22 +742,34 @@
           <li class="e-var-item">
             <div class="row">
               <div class="col-lg-12">
-                <p class="b-title">Ваш минимальный курс —  <span class="t-green"> 2-3 пачеки таблеток</span> для рассасывания <span class="t-green">NICOTINNET</span></p>
+                <p class="b-title">Ваш минимальный курс —
+                  <span class="t-green"> 2-3 пачеки таблеток</span>
+                  для рассасывания
+                  <span class="t-green">NICOTINNET</span>
+                </p>
               </div>
               <div class="col-lg-8">
                 <div class="b-desc-text">
-                  <div class="e-desc-left"><span class="e-desc-left-text">Цена курса:</span> <span class="e-desc-left-big-text"><span class="b-line-text">645</span> <span class="e-desc-text-new"><span class="t-green">430 ГРН</span> <span class="t-orange">за 3 пачки</span></span></span></div>
+                  <div class="e-desc-left">
+                    <span class="e-desc-left-text">Цена курса:</span>
+                    <span class="e-desc-left-big-text"><span class="b-line-text">645</span> <span
+                        class="e-desc-text-new"><span class="t-green">430 ГРН</span> <span
+                        class="t-orange">за 3 пачки</span></span></span>
+                  </div>
                 </div>
                 <div class="row b-view">
                   <div class="col-lg-12">
                     <div class="e-view-card m-view-big" style="background-image: url('img/only-drug.png')">
-                      <div class="e-view-card-text"><span class="t-green">х 3</span></div>
+                      <div class="e-view-card-text">
+                        <span class="t-green">х 3</span>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4">
-                <form class="b-form m-form-tree">
+                <form id="form14" method="POST" action="javascript:void(null);" class="b-form m-form-tree">
+                  <input type="text" name="when" class="hidden" value="Калькулятор - 3 пачки">
                   <p class="e-form-title">
                     Закажите
                     <span class="t-green">3 пачеки NIKOTINNET</span>
@@ -527,13 +778,19 @@
                     на вторую и третью пачку!
                   </p>
                   <div class="b-input-container">
-                    <input type="text" class="b-input" placeholder="Ваше имя">
+                    <input type="text" class="b-input" name="name" placeholder="Ваше имя">
                   </div>
                   <div class="b-input-container">
-                    <input type="text" class="b-input" placeholder="Ваш телефон">
+                    <input type="text" class="b-input" name="num" placeholder="Ваш телефон">
                   </div>
-                  <div class="e-form-text-check b-circle-container"><div class="b-circle m-circle-sm"></div>Хочу оплатить заказ on-line</div>
-                  <button class="b-button m-button-big m-100 anim">
+                  <div class="b-check">
+                    <input type="checkbox" name="check" id="ch441" value="Хочу оплатить заказ on-line">
+                    <label for="ch441" class="e-form-text-check b-circle-container">
+                      <div class="b-circle m-circle-sm"></div>
+                      Хочу оплатить заказ on-line
+                    </label>
+                  </div>
+                  <button type="submit" class="b-button m-button-big m-100 anim">
                                         <span class="e-button-container">
                                             <span class="t"><span class="c"><span class="e-button-text">заказать</span></span></span>
                                         </span>
@@ -545,17 +802,31 @@
           <li class="e-var-item">
             <div class="row">
               <div class="col-lg-12">
-                <p class="b-title">Ваш минимальный курс —  <span class="t-green"> 5 пачек таблеток</span> для рассасывания <span class="t-green">NICOTINNET</span></p>
+                <p class="b-title">Ваш минимальный курс —
+                  <span class="t-green"> 5 пачек таблеток</span>
+                  для рассасывания
+                  <span class="t-green">NICOTINNET</span>
+                </p>
               </div>
               <div class="col-lg-8">
                 <div class="b-desc-text">
-                  <div class="e-desc-left"><span class="e-desc-left-text">Цена курса:</span> <span class="e-desc-left-big-text"><span class="b-line-text">1275</span> <span class="e-desc-text-new"><span class="t-green">645 ГРН</span> <span class="t-orange">за 5 пачек</span></span></span></div>
-                  <div class="e-desc-right"><span class="e-desc-text-right"><span class="e-desc-plus">+</span>зубная паста <span class="t-green">NICODENTIN</span>в подарок</span></div>
+                  <div class="e-desc-left">
+                    <span class="e-desc-left-text">Цена курса:</span>
+                    <span class="e-desc-left-big-text"><span class="b-line-text">1275</span> <span
+                        class="e-desc-text-new"><span class="t-green">645 ГРН</span> <span
+                        class="t-orange">за 5 пачек</span></span></span>
+                  </div>
+                  <div class="e-desc-right">
+                    <span class="e-desc-text-right"><span class="e-desc-plus">+</span>зубная паста <span
+                        class="t-green">NICODENTIN</span>в подарок</span>
+                  </div>
                 </div>
                 <div class="row b-view">
                   <div class="col-lg-6">
                     <div class="e-view-card m-plus" style="background-image: url('img/pod1.png')">
-                      <div class="e-view-card-text"><span class="t-green">х 5</span></div>
+                      <div class="e-view-card-text">
+                        <span class="t-green">х 5</span>
+                      </div>
                     </div>
                   </div>
                   <div class="col-lg-6">
@@ -566,7 +837,8 @@
                 </div>
               </div>
               <div class="col-lg-4">
-                <form class="b-form m-form-tree">
+                <form id="form15" method="POST" action="javascript:void(null);" class="b-form m-form-tree">
+                  <input type="text" name="when" class="hidden" value="Калькулятор - 5 пачeк">
                   <p class="e-form-title">
                     Закажите
                     <span class="t-green">5 пачек NIKOTINNET</span>
@@ -577,13 +849,19 @@
                     в подарок
                   </p>
                   <div class="b-input-container">
-                    <input type="text" class="b-input" placeholder="Ваше имя">
+                    <input type="text" class="b-input" name="name" placeholder="Ваше имя">
                   </div>
                   <div class="b-input-container">
-                    <input type="text" class="b-input" placeholder="Ваш телефон">
+                    <input type="text" class="b-input" name="num" placeholder="Ваш телефон">
                   </div>
-                  <div class="e-form-text-check b-circle-container"><div class="b-circle m-circle-sm"></div>Хочу оплатить заказ on-line</div>
-                  <button class="b-button m-button-big m-100 anim">
+                  <div class="b-check">
+                    <input type="checkbox" name="check" id="ch51" value="Хочу оплатить заказ on-line">
+                    <label for="ch51" class="e-form-text-check b-circle-container">
+                      <div class="b-circle m-circle-sm"></div>
+                      Хочу оплатить заказ on-line
+                    </label>
+                  </div>
+                  <button type="submit" class="b-button m-button-big m-100 anim">
                                         <span class="e-button-container">
                                             <span class="t"><span class="c"><span class="e-button-text">заказать</span></span></span>
                                         </span>
@@ -595,17 +873,31 @@
           <li class="e-var-item">
             <div class="row">
               <div class="col-lg-12">
-                <p class="b-title">Ваш минимальный курс —  <span class="t-green"> 7 пачек таблеток</span> для рассасывания <span class="t-green">NICOTINNET</span></p>
+                <p class="b-title">Ваш минимальный курс —
+                  <span class="t-green"> 7 пачек таблеток</span>
+                  для рассасывания
+                  <span class="t-green">NICOTINNET</span>
+                </p>
               </div>
               <div class="col-lg-8">
                 <div class="b-desc-text">
-                  <div class="e-desc-left"><span class="e-desc-left-text">Цена курса:</span> <span class="e-desc-left-big-text"><span class="b-line-text">1275</span> <span class="e-desc-text-new"><span class="t-green">645 ГРН</span> <span class="t-orange">за 5 пачек</span></span></span></div>
-                  <div class="e-desc-right"><span class="e-desc-text-right"><span class="e-desc-plus">+</span>зубная паста <span class="t-green">NICODENTIN</span>в подарок</span></div>
+                  <div class="e-desc-left">
+                    <span class="e-desc-left-text">Цена курса:</span>
+                    <span class="e-desc-left-big-text"><span class="b-line-text">1275</span> <span
+                        class="e-desc-text-new"><span class="t-green">645 ГРН</span> <span
+                        class="t-orange">за 5 пачек</span></span></span>
+                  </div>
+                  <div class="e-desc-right">
+                    <span class="e-desc-text-right"><span class="e-desc-plus">+</span>зубная паста <span
+                        class="t-green">NICODENTIN</span>в подарок</span>
+                  </div>
                 </div>
                 <div class="row b-view">
                   <div class="col-lg-6">
                     <div class="e-view-card m-plus" style="background-image: url('img/pod1.png')">
-                      <div class="e-view-card-text"><span class="t-green">х 5</span></div>
+                      <div class="e-view-card-text">
+                        <span class="t-green">х 5</span>
+                      </div>
                     </div>
                   </div>
                   <div class="col-lg-6">
@@ -616,7 +908,8 @@
                 </div>
               </div>
               <div class="col-lg-4">
-                <form class="b-form m-form-tree">
+                <form id="form16" method="POST" action="javascript:void(null);" class="b-form m-form-tree">
+                  <input type="text" name="when" class="hidden" value="Калькулятор - 7 пачeк">
                   <p class="e-form-title">
                     Закажите
                     <span class="t-green">5 пачек NIKOTINNET</span>
@@ -627,13 +920,19 @@
                     в подарок
                   </p>
                   <div class="b-input-container">
-                    <input type="text" class="b-input" placeholder="Ваше имя">
+                    <input type="text" class="b-input" name="name" placeholder="Ваше имя">
                   </div>
                   <div class="b-input-container">
-                    <input type="text" class="b-input" placeholder="Ваш телефон">
+                    <input type="text" class="b-input" name="num" placeholder="Ваш телефон">
                   </div>
-                  <div class="e-form-text-check b-circle-container"><div class="b-circle m-circle-sm"></div>Хочу оплатить заказ on-line</div>
-                  <button class="b-button m-button-big m-100 anim">
+                  <div class="b-check">
+                    <input type="checkbox" name="check" id="ch421" value="Хочу оплатить заказ on-line">
+                    <label for="ch421" class="e-form-text-check b-circle-container">
+                      <div class="b-circle m-circle-sm"></div>
+                      Хочу оплатить заказ on-line
+                    </label>
+                  </div>
+                  <button type="submit" class="b-button m-button-big m-100 anim">
                                         <span class="e-button-container">
                                             <span class="t"><span class="c"><span class="e-button-text">заказать</span></span></span>
                                         </span>
@@ -670,7 +969,9 @@
         <ul class="b-per-list row">
           <li class="e-per-item col-lg-6">
             <div class="e-per-item-container">
-              <p class="e-per-title">Преимущества <span class="t-green f-e">NIKOTINNET</span></p>
+              <p class="e-per-title">Преимущества
+                <span class="t-green f-e">NIKOTINNET</span>
+              </p>
               <ul class="b-per-text-list">
                 <li class="e-per-text-item">
                   <p class="e-per-text">Не вызывает привыкания,
@@ -683,7 +984,8 @@
                   <div class="b-circle"></div>
                 </li>
                 <li class="e-per-text-item">
-                  <p class="e-per-text">Не содержит  анксиолитиков (транквилизаторов). Успокаивающее действие оказывается только за счет растительного состава!</p>
+                  <p class="e-per-text">Не содержит анксиолитиков (транквилизаторов). Успокаивающее действие оказывается
+                    только за счет растительного состава!</p>
                   <div class="b-circle"></div>
                 </li>
                 <li class="e-per-text-item">
@@ -697,11 +999,12 @@
                   <div class="b-circle"></div>
                 </li>
                 <li class="e-per-text-item">
-                  <p class="e-per-text">Не важен  режим питания и питья</p>
+                  <p class="e-per-text">Не важен режим питания и питья</p>
                   <div class="b-circle"></div>
                 </li>
                 <li class="e-per-text-item">
-                  <p class="e-per-text">Простой и понятный способ применения: захотелось покурить — пора принять таблетку</p>
+                  <p class="e-per-text">Простой и понятный способ применения: захотелось покурить — пора принять
+                    таблетку</p>
                   <div class="b-circle"></div>
                 </li>
               </ul>
@@ -710,7 +1013,8 @@
           <li class="e-per-item col-lg-6">
             <div class="e-per-item-container m-per-item-container-right">
               <p class="e-per-title"><span class="t-orange">Недостатки
-дорогих аналогов</span></p>
+дорогих аналогов</span>
+              </p>
               <ul class="b-per-text-list m-per-text-right">
                 <li class="e-per-text-item">
                   <p class="e-per-text">Вызывают привыкание из-за
@@ -718,15 +1022,18 @@
                   <div class="b-circle"></div>
                 </li>
                 <li class="e-per-text-item">
-                  <p class="e-per-text">Содержат различные  потенциально опасные заместители никотина, которые нельзя принимать без назначения</p>
+                  <p class="e-per-text">Содержат различные потенциально опасные заместители никотина, которые нельзя
+                    принимать без назначения</p>
                   <div class="b-circle"></div>
                 </li>
                 <li class="e-per-text-item">
-                  <p class="e-per-text">Содержат  анксиолитики (транквилизаторы), для достижения расслабления и успокоения</p>
+                  <p class="e-per-text">Содержат анксиолитики (транквилизаторы), для достижения расслабления и
+                    успокоения</p>
                   <div class="b-circle"></div>
                 </li>
                 <li class="e-per-text-item">
-                  <p class="e-per-text">Требуют приема по строгому графику. Каждая пропущенная таблетка провоцирует срыв на курение</p>
+                  <p class="e-per-text">Требуют приема по строгому графику. Каждая пропущенная таблетка провоцирует срыв
+                    на курение</p>
                   <div class="b-circle"></div>
                 </li>
                 <li class="e-per-text-item">
@@ -744,7 +1051,7 @@
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
             <div class="b-button-container">
-              <button class="b-button m-button-big m-button-auto anim">
+              <button class="b-button m-button-big m-button-auto anim" data-button="8">
                                         <span class="e-button-container">
                                             <span class="t"><span class="c"><span class="e-button-text">заказать</span></span></span>
                                         </span>
@@ -764,46 +1071,85 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h2 class="b-title">Мнение специалиста об эффективности <span class="t-green">NICOTINNET</span><span class="m-new-line">и отзывы наших покупателей</span></h2>
+            <h2 class="b-title">Мнение специалиста об эффективности
+              <span class="t-green">NICOTINNET</span>
+              <span class="m-new-line">и отзывы наших покупателей</span>
+            </h2>
           </div>
           <div class="col-lg-10 b-slider-container col-lg-offset-1">
             <div class="swiper-container">
               <ul class="b-slider-comment swiper-wrapper">
                 <li class="e-slider-comment-item swiper-slide">
                   <div class="b-comment">
-                    <div class="e-comment-img" style="background-image: url('img/doc.png')" data-swiper-parallax="-3200"></div>
-                    <p class="e-comment-text" data-swiper-parallax="-1000">NIKOTINNET — это украинский качественный, безопасный и, главное, доступный препарат для тех, кто стремится бросить курить, и у кого нет времени идти к доктору за консультацией (что, в общем-то, всегда необходимо!)</p>
-                    <p class="e-comment-text" data-swiper-parallax="-4000">По сути это БАД, но с доказанной эффективностью. В моей практике 8 из 10 человек забывают о сигаретах уже через 15-25 дней. Назначая  Никотиннет,  я всегда уверен, что у моего пациента не возникнет побочных эффектов.</p>
-                    <p class="e-comment-text" data-swiper-parallax="-2000">Поэтому, если нет желания экспериментировать со здоровьем и тратить деньги на дорогие аналоги, смело выбирайте NIKOTINNET. Средний рекомендованный курс — 160 таблеток.</p>
+                    <div class="e-comment-img" style="background-image: url('img/doc.png')"
+                         data-swiper-parallax="-3200"></div>
+                    <p class="e-comment-text" data-swiper-parallax="-1000">NIKOTINNET — это украинский качественный,
+                      безопасный и, главное, доступный препарат для тех, кто стремится бросить курить, и у кого нет
+                      времени идти к доктору за консультацией (что, в общем-то, всегда необходимо!)</p>
+                    <p class="e-comment-text" data-swiper-parallax="-4000">По сути это БАД, но с доказанной
+                      эффективностью. В моей практике 8 из 10 человек забывают о сигаретах уже через 15-25 дней.
+                      Назначая Никотиннет, я всегда уверен, что у моего пациента не возникнет побочных эффектов.</p>
+                    <p class="e-comment-text" data-swiper-parallax="-2000">Поэтому, если нет желания экспериментировать
+                      со здоровьем и тратить деньги на дорогие аналоги, смело выбирайте NIKOTINNET. Средний
+                      рекомендованный курс — 160 таблеток.</p>
                   </div>
                 </li>
                 <li class="e-slider-comment-item swiper-slide">
                   <div class="b-comment">
-                    <div class="e-comment-img" style="background-image: url('img/doc.png')" data-swiper-parallax="-3200"></div>
-                    <p class="e-comment-text" data-swiper-parallax="-1000">Не буду лгать о том, что первая же таблетка отучила меня курить раз и навсегда. И даже не вторая. И не десятая. Я просто рассасывала таблетку и шла курить как ни в чем не бывало</p>
-                    <p class="e-comment-text" data-swiper-parallax="-4000">Первые спасительные звоночки прозвучали на третий день: мне показалось, что мои любимые сигареты какие-то ...невкусные. пару дней мой бедный мозг еще цеплялся за старую привычку, потом началось отвыкание. К концу третьей недели я поняла, что больше не хочу курить. Вот не хочу, и все тут. Более того: запах сигаретного дыма стал для меня настолько неприятным, что я до сих пор не могу сидеть в автобусе рядом в только что покурившим человеком.</p>
-                    <p class="e-comment-text" data-swiper-parallax="-2000">На мое полное избавление от курения мне понадобилось 4 упаковки Никотина,нет.</p>
+                    <div class="e-comment-img" style="background-image: url('img/doc.png')"
+                         data-swiper-parallax="-3200"></div>
+                    <p class="e-comment-text" data-swiper-parallax="-1000">Не буду лгать о том, что первая же таблетка
+                      отучила меня курить раз и навсегда. И даже не вторая. И не десятая. Я просто рассасывала таблетку
+                      и шла курить как ни в чем не бывало</p>
+                    <p class="e-comment-text" data-swiper-parallax="-4000">Первые спасительные звоночки прозвучали на
+                      третий день: мне показалось, что мои любимые сигареты какие-то ...невкусные. пару дней мой бедный
+                      мозг еще цеплялся за старую привычку, потом началось отвыкание. К концу третьей недели я поняла,
+                      что больше не хочу курить. Вот не хочу, и все тут. Более того: запах сигаретного дыма стал для
+                      меня настолько неприятным, что я до сих пор не могу сидеть в автобусе рядом в только что
+                      покурившим человеком.</p>
+                    <p class="e-comment-text" data-swiper-parallax="-2000">На мое полное избавление от курения мне
+                      понадобилось 4 упаковки Никотина,нет.</p>
                   </div>
                 </li>
                 <li class="e-slider-comment-item swiper-slide">
                   <div class="b-comment">
-                    <div class="e-comment-img" style="background-image: url('img/doc.png')" data-swiper-parallax="-3200"></div>
-                    <p class="e-comment-text" data-swiper-parallax="-1000">Начал курить по своей глупости. В последние пол года я все пытался бросить. Пробовал разные жвачки для отказа от курения, пластырь, читала "Легкий способ курить", но видимого результата это мне не принесло.</p>
-                    <p class="e-comment-text" data-swiper-parallax="-4000">А этот никотиннт значительно понизил тягу к курению, и в итоге избавил от никотиновой зависимости. Мне понравилось, что в его составе содержатся полезные травы, которые не несут негативного влияния на организм. Рассасывал таблетку каждый раз, когда хотел курить и чистил зубы пастой. В результате двух недель я полностью избавился от зависимости. Для меня это препарат номер один от избавления от курения. А главное что быстро действует и нет никаких побочек.</p>
+                    <div class="e-comment-img" style="background-image: url('img/doc.png')"
+                         data-swiper-parallax="-3200"></div>
+                    <p class="e-comment-text" data-swiper-parallax="-1000">Начал курить по своей глупости. В последние
+                      пол года я все пытался бросить. Пробовал разные жвачки для отказа от курения, пластырь, читала
+                      "Легкий способ курить", но видимого результата это мне не принесло.</p>
+                    <p class="e-comment-text" data-swiper-parallax="-4000">А этот никотиннт значительно понизил тягу к
+                      курению, и в итоге избавил от никотиновой зависимости. Мне понравилось, что в его составе
+                      содержатся полезные травы, которые не несут негативного влияния на организм. Рассасывал таблетку
+                      каждый раз, когда хотел курить и чистил зубы пастой. В результате двух недель я полностью
+                      избавился от зависимости. Для меня это препарат номер один от избавления от курения. А главное что
+                      быстро действует и нет никаких побочек.</p>
                   </div>
                 </li>
                 <li class="e-slider-comment-item swiper-slide">
                   <div class="b-comment">
-                    <div class="e-comment-img" style="background-image: url('img/doc.png')" data-swiper-parallax="-3200"></div>
-                    <p class="e-comment-text" data-swiper-parallax="-1000">Препарат оказался действительно эффективным. Как и с любыми другими средствами, в первые дни было тяжеловато мужу, это было заметно, но уже на третий день он смотрел на сигареты равнодушно, не было порывов закурить.</p>
-                    <p class="e-comment-text" data-swiper-parallax="-4000">Не замечала я, чтобы муж сильно налегал на еду, обычно же организму нужна какая-то замена и человек намного больше кушает, но с мужем такого не было. Не замечалось и резких перепадов настроения, муж вел себя достаточно нормально и спокойно.</p>
-                    <p class="e-comment-text" data-swiper-parallax="-2000">Курс составлял всего две недели. 14 дней - это не много и мы не думали, что за этот срок реально бросить курить, но муж бросил. Уже третий месяц пошел и он не курит</p>
+                    <div class="e-comment-img" style="background-image: url('img/doc.png')"
+                         data-swiper-parallax="-3200"></div>
+                    <p class="e-comment-text" data-swiper-parallax="-1000">Препарат оказался действительно эффективным.
+                      Как и с любыми другими средствами, в первые дни было тяжеловато мужу, это было заметно, но уже на
+                      третий день он смотрел на сигареты равнодушно, не было порывов закурить.</p>
+                    <p class="e-comment-text" data-swiper-parallax="-4000">Не замечала я, чтобы муж сильно налегал на
+                      еду, обычно же организму нужна какая-то замена и человек намного больше кушает, но с мужем такого
+                      не было. Не замечалось и резких перепадов настроения, муж вел себя достаточно нормально и
+                      спокойно.</p>
+                    <p class="e-comment-text" data-swiper-parallax="-2000">Курс составлял всего две недели. 14 дней -
+                      это не много и мы не думали, что за этот срок реально бросить курить, но муж бросил. Уже третий
+                      месяц пошел и он не курит</p>
                   </div>
                 </li>
               </ul>
             </div>
-            <button class="b-arrow-slider js-sl-prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></button>
-            <button class="b-arrow-slider m-arrow-slider-right js-sl-next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+            <button class="b-arrow-slider js-sl-prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            </button>
+            <button class="b-arrow-slider m-arrow-slider-right js-sl-next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            </button>
           </div>
         </div>
       </div>
@@ -824,18 +1170,24 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <h2 class="b-title"><span class="t-green">NICOTINNET</span> — лучший украинский препарат <span class="m-new-line">в борьбе с курением  от ТМ "Кортес"</span></h2>
+            <h2 class="b-title">
+              <span class="t-green">NICOTINNET</span>
+              — лучший украинский препарат
+              <span class="m-new-line">в борьбе с курением  от ТМ "Кортес"</span>
+            </h2>
           </div>
         </div>
         <ul class="b-gal-list row">
           <li class="col-lg-3">
             <div class="b-gal">
-              <p class="e-gal-text">Компания «Эликcир»  производит полезные растительные препараты на высокотехнологичном оборудовании, сертифицированном по стандартам GMP</p>
+              <p class="e-gal-text">Компания «Эликcир» производит полезные растительные препараты на высокотехнологичном
+                оборудовании, сертифицированном по стандартам GMP</p>
             </div>
           </li>
           <li class="col-lg-3">
             <div class="b-gal">
-              <p class="e-gal-text">Разрабатывает продукты только на растительной и минеральной основе, безопасной для человека</p>
+              <p class="e-gal-text">Разрабатывает продукты только на растительной и минеральной основе, безопасной для
+                человека</p>
             </div>
           </li>
           <li class="col-lg-3">
@@ -845,7 +1197,8 @@
           </li>
           <li class="col-lg-3">
             <div class="b-gal">
-              <p class="e-gal-text">Все продукты изготавливаются по фармацевтическим стандартам из высококачественного сырья ведущих мировых производителей</p>
+              <p class="e-gal-text">Все продукты изготавливаются по фармацевтическим стандартам из высококачественного
+                сырья ведущих мировых производителей</p>
             </div>
           </li>
           <li class="col-lg-4">
@@ -890,7 +1243,7 @@
                     <img src="img/3.png" alt="">
                   </div>
                   <p class="e-num-desc">
-                    Мы доставим  таблетки
+                    Мы доставим таблетки
                     <span class="t-green t-upper">Новой Почтой</span>
                     в удобное Вам отделение бесплатно!
                   </p>
@@ -899,21 +1252,27 @@
             </ul>
             <div class="b-form-container">
               <div class="e-form-cont2">
-                <form class="b-form m-form-big">
-
+                <form id="form11" method="POST" action="javascript:void(null);" class="b-form m-form-big">
+                  <input type="text" name="when" class="hidden" value="Как заказать и получить препарат">
                   <p class="e-form-title">
                     <span class="m-new-line f-e">Оформите заявку на заказ </span>
 
                     <span class="t-upper">мы свяжемся с Вами в ближайшее время!</span>
                   </p>
                   <div class="b-input-container">
-                    <input type="text" class="b-input" placeholder="Ваше имя">
+                    <input type="text" class="b-input" name="name" placeholder="Ваше имя">
                   </div>
                   <div class="b-input-container">
-                    <input type="text" class="b-input" placeholder="Ваш телефон">
+                    <input type="text" class="b-input" name="num" placeholder="Ваш телефон">
                   </div>
-                  <div class="e-form-text-check b-circle-container"><div class="b-circle m-circle-sm"></div>Хочу оплатить заказ on-line</div>
-                  <button class="b-button m-button-big m-100 anim">
+                  <div class="b-check">
+                    <input type="checkbox" name="check" id="ch41" value="Хочу оплатить заказ on-line">
+                    <label for="ch41" class="e-form-text-check b-circle-container">
+                      <div class="b-circle m-circle-sm"></div>
+                      Хочу оплатить заказ on-line
+                    </label>
+                  </div>
+                  <button type="submit" class="b-button m-button-big m-100 anim">
                                         <span class="e-button-container">
                                             <span class="t"><span class="c"><span class="e-button-text">заказать</span></span></span>
                                         </span>
@@ -931,9 +1290,17 @@
                 </div>
               </div>
               <div class="b-spec-text-container">
-                <p class="e-spec-text"><span class="f-m">Цена:</span> <span class="b-line-text">250 грн</span></p>
-                <p class="e-spec-text"><span class="f-m">Сегодня :</span> <span class="t-orange">скидка <span class="e-spec-text-sm">до</span> 50%</span></p>
-                <p class="e-spec-text m-spec-text-last"><span class="t-orange">+ Зубная паста<span class="t-upper">В ПОДАРОК</span></span></p>
+                <p class="e-spec-text">
+                  <span class="f-m">Цена:</span>
+                  <span class="b-line-text">250 грн</span>
+                </p>
+                <p class="e-spec-text">
+                  <span class="f-m">Сегодня :</span>
+                  <span class="t-orange">скидка <span class="e-spec-text-sm">до</span> 50%</span>
+                </p>
+                <p class="e-spec-text m-spec-text-last">
+                  <span class="t-orange">+ Зубная паста<span class="t-upper">В ПОДАРОК</span></span>
+                </p>
               </div>
             </div>
           </div>
@@ -996,12 +1363,14 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <button class="b-button m-button-dashed m-100 anim">
+            <a href="https://vk.com/doc30051796_439745847?hash=e1f65083cfa74d5738&dl=21ebf4519ad1ad4bdf" target="_blank"
+               class="b-button m-button-dashed m-100 anim">
                                         <span class="e-button-container">
                                             <span class="t"><span class="c"><span class="e-button-text">Ознакомтесь с инструкцией</span></span></span>
                                         </span>
-            </button>
-            <form class="b-form">
+            </a>
+            <form id="form12" method="POST" action="javascript:void(null);" class="b-form">
+              <input type="text" name="when" class="hidden" value="Карта">
               <p class="e-form-title-big">
                 ОСТАЛИСЬ ВОПРОСЫ?
               </p>
@@ -1010,13 +1379,19 @@
                 <span class="m-new-line">с Вами и ответим на все вопросы!</span>
               </p>
               <div class="b-input-container">
-                <input type="text" class="b-input" placeholder="Ваше имя">
+                <input type="text" class="b-input" name="name" placeholder="Ваше имя">
               </div>
               <div class="b-input-container">
-                <input type="text" class="b-input" placeholder="Ваш телефон">
+                <input type="text" class="b-input" name="num" placeholder="Ваш телефон">
               </div>
-              <div class="e-form-text-check b-circle-container"><div class="b-circle m-circle-sm"></div>Хочу оплатить заказ on-line</div>
-              <button class="b-button m-button-big m-100 anim">
+              <div class="b-check">
+                <input type="checkbox" name="check" id="ch12" value="Хочу оплатить заказ on-line">
+                <label for="ch12" class="e-form-text-check b-circle-container">
+                  <div class="b-circle m-circle-sm"></div>
+                  Хочу оплатить заказ on-line
+                </label>
+              </div>
+              <button type="submit" class="b-button m-button-big m-100 anim">
                                         <span class="e-button-container">
                                             <span class="t"><span class="c"><span class="e-button-text">отправить</span></span></span>
                                         </span>
@@ -1034,9 +1409,17 @@
                 </div>
               </div>
               <div class="b-spec-text-container">
-                <p class="e-spec-text"><span class="f-m">Цена:</span> <span class="b-line-text">250 грн</span></p>
-                <p class="e-spec-text"><span class="f-m">Сегодня :</span> <span class="t-orange">скидка <span class="e-spec-text-sm">до</span> 50%</span></p>
-                <p class="e-spec-text m-spec-text-last"><span class="t-orange">+ Зубная паста<span class="t-upper">В ПОДАРОК</span></span></p>
+                <p class="e-spec-text">
+                  <span class="f-m">Цена:</span>
+                  <span class="b-line-text">250 грн</span>
+                </p>
+                <p class="e-spec-text">
+                  <span class="f-m">Сегодня :</span>
+                  <span class="t-orange">скидка <span class="e-spec-text-sm">до</span> 50%</span>
+                </p>
+                <p class="e-spec-text m-spec-text-last">
+                  <span class="t-orange">+ Зубная паста<span class="t-upper">В ПОДАРОК</span></span>
+                </p>
               </div>
             </div>
           </div>
@@ -1070,7 +1453,7 @@
               </a>
             </li>
             <li class="e-phone-item">
-              <button data-button="1" class="b-button m-button-sm m-100">
+              <button data-button="9" class="b-button m-button-sm m-100">
                 <span class="e-button-container"><span class="t"><span class="c"><span class="e-button-text">заказать звонок</span></span></span></span>
               </button>
             </li>

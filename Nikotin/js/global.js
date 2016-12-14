@@ -20,22 +20,6 @@ $(document).ready(function () {
 
     };
 
-    // Number fix
-    $("[name='num']").keypress(function (event) {
-        var controlKeys = [8, 9, 13, 35, 36, 37, 39];
-        // IE doesn't support indexOf
-        var isControlKey = controlKeys.join(",").match(new RegExp(event.which));
-        // Some browsers just don't raise events for control keys. Easy.
-        // e.g. Safari backspace.
-        if (!event.which || // Control keys in most browsers. e.g. Firefox tab is 0
-            (49 <= event.which && event.which <= 57) || // Always 1 through 9
-            (48 == event.which && $(this).attr("value")) || // No 0 first digit
-            isControlKey) { // Opera assigns values for control keys.
-            return;
-        } else {
-            event.preventDefault();
-        }
-    });
 
     // Link anchor
     $(function () {
@@ -172,16 +156,171 @@ $(document).ready(function () {
 
     };
 
-
-    $("#form1").submit(function () { //устанавливаем событие отправки для формы с id=form
-        var form_data = $(this).serialize(); //собераем все данные из формы
+    $("#form1").submit(function () {
+        var msg = $(this).serialize();
         $.ajax({
-            type: "POST", //Метод отправки
-            url: "send.php", //путь до php фаила отправителя
-            data: form_data,
-            success: function () {
-                //код в этом блоке выполняется при успешной отправке сообщения
-                alert("Ваше сообщение отпрвлено!");
+            type: 'POST',
+            url: '../send.php',
+            data: msg,
+            success: function (data) {
+                window.location.href = 'thanks.html';
+            },
+            error: function (xhr, str) {
+                alert('Возникла ошибка: ' + xhr.responseCode);
+            }
+        });
+    });
+    $("#form2").submit(function () {
+        var msg = $(this).serialize();
+        $.ajax({
+            type: 'POST',
+            url: '../send.php',
+            data: msg,
+            success: function (data) {
+                window.location.href = 'thanks.html';
+            },
+            error: function (xhr, str) {
+                alert('Возникла ошибка: ' + xhr.responseCode);
+            }
+        });
+    });
+    $("#form3").submit(function () {
+        var msg = $(this).serialize();
+        $.ajax({
+            type: 'POST',
+            url: '../send.php',
+            data: msg,
+            success: function (data) {
+                window.location.href = 'thanks.html';
+            },
+            error: function (xhr, str) {
+                alert('Возникла ошибка: ' + xhr.responseCode);
+            }
+        });
+    });
+    $("#form4").submit(function () {
+        var msg = $(this).serialize();
+        $.ajax({
+            type: 'POST',
+            url: '../send.php',
+            data: msg,
+            success: function (data) {
+                window.location.href = 'thanks.html';
+            },
+            error: function (xhr, str) {
+                alert('Возникла ошибка: ' + xhr.responseCode);
+            }
+        });
+    });
+    $("#form5").submit(function () {
+        var msg = $(this).serialize();
+        $.ajax({
+            type: 'POST',
+            url: '../send.php',
+            data: msg,
+            success: function (data) {
+                window.location.href = 'thanks.html';
+            },
+            error: function (xhr, str) {
+                alert('Возникла ошибка: ' + xhr.responseCode);
+            }
+        });
+    });
+    $("#form11").submit(function () {
+        var msg = $(this).serialize();
+        $.ajax({
+            type: 'POST',
+            url: '../send.php',
+            data: msg,
+            success: function (data) {
+                window.location.href = 'thanks.html';
+            },
+            error: function (xhr, str) {
+                alert('Возникла ошибка: ' + xhr.responseCode);
+            }
+        });
+    });
+    $("#form12").submit(function () {
+        var msg = $(this).serialize();
+        $.ajax({
+            type: 'POST',
+            url: '../send.php',
+            data: msg,
+            success: function (data) {
+                window.location.href = 'thanks.html';
+            },
+            error: function (xhr, str) {
+                alert('Возникла ошибка: ' + xhr.responseCode);
+            }
+        });
+    });
+    $("#form13").submit(function () {
+        var msg = $(this).serialize();
+        $.ajax({
+            type: 'POST',
+            url: '../send.php',
+            data: msg,
+            success: function (data) {
+                window.location.href = 'thanks.html';
+            },
+            error: function (xhr, str) {
+                alert('Возникла ошибка: ' + xhr.responseCode);
+            }
+        });
+    });
+    $("#form14").submit(function () {
+        var msg = $(this).serialize();
+        $.ajax({
+            type: 'POST',
+            url: '../send.php',
+            data: msg,
+            success: function (data) {
+                window.location.href = 'thanks.html';
+            },
+            error: function (xhr, str) {
+                alert('Возникла ошибка: ' + xhr.responseCode);
+            }
+        });
+    });
+    $("#form15").submit(function () {
+        var msg = $(this).serialize();
+        $.ajax({
+            type: 'POST',
+            url: '../send.php',
+            data: msg,
+            success: function (data) {
+                window.location.href = 'thanks.html';
+            },
+            error: function (xhr, str) {
+                alert('Возникла ошибка: ' + xhr.responseCode);
+            }
+        });
+    });
+    $("#form16").submit(function () {
+        var msg = $(this).serialize();
+        $.ajax({
+            type: 'POST',
+            url: '../send.php',
+            data: msg,
+            success: function (data) {
+                window.location.href = 'thanks.html';
+            },
+            error: function (xhr, str) {
+                alert('Возникла ошибка: ' + xhr.responseCode);
+            }
+        });
+    });
+    $("#form17").submit(function () {
+        var msg = $(this).serialize();
+        $.ajax({
+            type: 'POST',
+            url: '../send.php',
+            data: msg,
+            success: function (data) {
+                window.location.href = 'thanks.html';
+            },
+            error: function (xhr, str) {
+                alert('Возникла ошибка: ' + xhr.responseCode);
             }
         });
     });

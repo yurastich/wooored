@@ -822,7 +822,30 @@ section {
     box-sizing: border-box;
     overflow: hidden;
     border-color: #ebebeb;
+    cursor: pointer;
     @include bg();
+    position: relative;
+    font-family: 'Glyphicons Halflings';
+    font-size: 30px;
+    color: #fff;
+    &:before{
+      content: "\e015";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding-top: 50px;
+      background-color: rgba(0,0,0,.5);
+      border-radius: 50%;
+      opacity: 0;
+      @include transition-def();
+    }
+    &:hover{
+      &:before{
+        opacity: 1;
+      }
+    }
   }
 }
 
@@ -1689,6 +1712,31 @@ section {
 
 .b-popup-overlay {
   width: 370px;
+  &.m-popup-overlay-text{
+    width: auto;
+  }
+}
+
+.b-popup{
+  @include border();
+  border-radius: 30px;
+  background-color: #fff;
+  max-height: 600px;
+  width: 600px;
+  padding: 30px;
+  overflow-y: auto;
+  .e-popup-text{
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    &+.e-popup-text{
+      padding-top: 30px;
+    }
+  }
+  .b-title{
+    padding-top: 0;
+    margin-top: 0;
+  }
 }
 
 .b-close {
@@ -1725,6 +1773,29 @@ section {
   z-index: 0;
   img {
     width: auto;
+  }
+}
+
+.b-check{
+  label{
+    cursor: pointer;
+    display: block;
+  }
+  .b-circle{
+    background-color: #ebebeb;
+    @include transition-def();
+  }
+  input{
+    display: none !important;
+  }
+  [type="checkbox"]{
+    &:checked{
+      &+label{
+        .b-circle{
+          background-color: $green;
+        }
+      }
+    }
   }
 }
 

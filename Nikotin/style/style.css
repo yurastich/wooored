@@ -1588,6 +1588,8 @@ section {
 
 .b-input-container + .b-input-container {
   margin-top: 20px; }
+.b-input-container + .b-button {
+  margin-top: 20px; }
 
 .b-per-list {
   padding-top: 17px; }

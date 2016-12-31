@@ -2430,7 +2430,7 @@ p::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h
 
   .b-about-list .e-about-text .e-about-text-num {
     font-size: 30px;
-    line-height: 52px; }
+    line-height: 42px; }
 
   .b-social {
     text-align: center;
@@ -2558,7 +2558,8 @@ p::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h
     padding: 0 15px; }
 
   .b-last {
-    padding-top: 30px; }
+    padding-top: 30px;
+    background-position: -250px top; }
     .b-last .e-last-container {
       padding-left: 0; }
 

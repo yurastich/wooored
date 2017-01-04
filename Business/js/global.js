@@ -69,6 +69,7 @@ $(document).ready(function () {
             $("[data-modal='" + popupNum + "']").addClass("active").animate({
                 "opacity": 1
             }, 300);
+            header();
             overlayOpen();
         });
 
@@ -129,7 +130,7 @@ $(document).ready(function () {
     };
     // Overlay end
 
-// popup end
+    // Popup end
 
 
     var whyBlock = function () {
@@ -184,16 +185,11 @@ $(document).ready(function () {
         spaceBetween: 20
     });
 
-    var firstScreen = function () {
-        var header = $(".b-header").outerHeight();
-        $(".b-first").css("margin-top",header);
-    };
 
 
     androidAnimate();
     whyBlock();
     detailItem();
-    firstScreen();
 
 
     $('.b-time').timeTo({
@@ -208,7 +204,6 @@ $(document).ready(function () {
     $("input").each(function () {
         var valNow = $(this).val(),
             par = $(this).closest(".b-input-container");
-        console.log(valNow);
         if (valNow == "") {
             par.removeClass("m-full");
         } else {
@@ -219,7 +214,6 @@ $(document).ready(function () {
     $("input").blur(function () {
         var valNow = $(this).val(),
             par = $(this).closest(".b-input-container");
-        console.log(valNow);
         if (valNow == "") {
             par.removeClass("m-full");
         } else {
@@ -233,19 +227,38 @@ $(document).ready(function () {
         var menu = $(this).closest(".b-header").find(".b-nav-list");
         $(this).toggleClass("active");
         menu.toggleClass("active");
+        $(".e-header-scr").toggleClass("active");
     });
     // menu button end
 
+    var header = function () {
+        var scr = $(window).scrollTop(),
+            h = $(".b-header"),
+            pop = $(".wrap").hasClass("m-wrap-popup");
+
+        if(scr>=35){
+            h.addClass("m-header-top");
+            $(".b-first").css("margin-top",62);
+
+        }else{
+            if(pop == false){
+                h.removeClass("m-header-top");
+                $(".b-first").css("margin-top",0);
+            }
+        }
+
+    };
 
 
+    popup();
 
     $(window).resize(function () {
-        firstScreen();
+        header();
 
     });
 
     $(window).load(function () {
-        firstScreen();
+        header();
     });
 
 
@@ -254,6 +267,7 @@ $(document).ready(function () {
             screenHeight = $(window).height(),
             screenWidth = $(window).width();
         // scroll();
+        header();
     });
 
 

@@ -21,7 +21,7 @@ body, ul, p, h1, h2, h3, h4, a, button {
 
 .wrap{
   &.m-wrap-popup{
-    height: 100%;
+    height: calc(100% + 1px);
     overflow: hidden;
   }
 }
@@ -451,6 +451,13 @@ html {
       text-align: left;
     }
   }
+}
+
+.b-popup{
+  background-color: #fff;
+  width: 450px;
+  position: relative;
+  z-index: 5;
 }
 
 @media (max-width: 767px){

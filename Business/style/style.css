@@ -1801,12 +1801,12 @@ section {
     color: #395bd9;
     text-align: center; }
 
-@media (min-width: 1200px) {
-  .container {
-    width: 1200px; } }
 @media (min-width: 768px) {
   .container {
     width: 680px; } }
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px; } }
 @media (max-width: 1260px) {
   .b-arrow.m-arrow-left {
     left: -25px; }

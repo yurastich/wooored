@@ -670,8 +670,8 @@ section {
     @include shadow-def();
     background-color: #fff;
     @include transform(scale(1.15));
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 12%;
+    padding-right: 12%;
     z-index: 2;
     .e-res-icon {
       @include transform(scale(1.6));
@@ -689,7 +689,7 @@ section {
     padding: 33px 11.2% 41px;
     &:hover, &.active {
       @include transform(scale(1.05));
-      padding: 37px 12.9% 37px;
+      padding: 37px 11% 37px;
       .e-res-text {
         padding-top: 11px;
         height: 115px;

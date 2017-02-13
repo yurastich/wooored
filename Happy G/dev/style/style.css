@@ -1478,7 +1478,7 @@ section {
     visibility: visible; }
   .b-message.disabled {
     bottom: -100px;
-    left: -100px;
+    left: -500px;
     opacity: 0;
     visibility: hidden; }
 
@@ -1495,7 +1495,7 @@ section {
 
 @media (min-width: 1600px) {
   .b-video-container {
-    padding-bottom: 37%; } }
+    padding-bottom: 57%; } }
 @media (max-width: 1260px) {
   .b-phone-container .e-phone {
     font-size: 30px;

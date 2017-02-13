@@ -35,7 +35,6 @@ $(document).ready(function () {
 
     };
 
-
     var companySlider = new Swiper('.js-company', {
         paginationClickable: true,
         slidesPerView: 5,

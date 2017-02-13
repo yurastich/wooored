@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Квартиры</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="style/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="style/fonts.css">
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+  <script src="js/jquery-2.2.3.min.js"></script>
+
+
+  <script src="js/map.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="js/global.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="b-overlay"></div>
+  <button class="b-close m-close-glob"></button>
+  <div class="b-popup-overlay" data-modal="1">
+    <div class="e-popup-overlay-container">
+      <img src="img/ser1.png" alt="">
+    </div>
+  </div>
+  <div class="b-popup-overlay" data-modal="2">
+    <div class="e-popup-overlay-container">
+      <img src="img/ser2.png" alt="">
+    </div>
+  </div>
+  <div class="b-popup-overlay" data-modal="3">
+    <div class="e-popup-overlay-container">
+      <div class="b-popup">
+        <form id="form2" method="POST" class="b-form">
+          <div class="t">
+            <div class="c">
+              <p class="e-form-title">Заказать звонок</p>
+              <p class="e-form-subtitle">Напишите номер телефона и наш менеджер обязательно свяжется с вами</p>
+              <div class="b-input-container">
+                <input type="text" name="tel" required="required" class="b-input" placeholder="Номер телефона">
+              </div>
+              <button class="b-button" type="submit">
+                                        <span class="e-button-container">
+                                            <span class="t"><span class="c"><span class="e-button-text">Заказать звонок</span></span></span>
+                                        </span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <header class="b-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="e-header-container">
+              <div class="e-header-bg-container b-bg">
+                                <span class="e-bg-img-container"><span class="e-bg-img"
+                                                                       style="background-image: url('img/bg-header.png')"></span></span>
+                <div class="e-header-bg-content">
+                  <a href="#" class="b-logo">
+                    <img src="img/logo.png" alt="">
+                  </a>
+                  <div class="e-header-right">
+                    <a href="tel:88009455424" class="b-phone">8 800 945-54-24</a>
+                    <div>
+                      <button data-button="3" class="b-button">
+                                        <span class="e-button-container">
+                                            <span class="t"><span class="c"><span
+                                                class="e-button-text">заказать звонок</span></span></span>
+                                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="b-first">
+      <div class="container">
+        <div class="row">
+          <div class="b-first-container b-bg col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <span class="e-bg-img-container"><span class="e-bg-img"
+                                                       style="background-image: url('img/bg.png')"></span></span>
+            <div class="e-first-content">
+              <div class="b-register">
+                <div class="e-register-left">
+                  <h1 class="e-register-title">Купить квартиру или дом
+                    <span class="m-new-line f-b">под 2% годовых</span>
+                  </h1>
+                  <p class="e-register-text">Согласно последним социологическим опросам в нашей стране улучшить свои
+                    жилищные условия хотят около 80% опрошенных россиян. </p>
+                  <p class="e-register-text">В то же время для многих из них эта цель является недосягаемой по одной
+                    главной причине – у них нет для этого денежных средств.</p>
+                </div>
+                <form id="form" method="POST" action="javascript:void(null);" class="b-form">
+                  <div class="t">
+                    <div class="c">
+                      <p class="e-form-title">РЕГИСТРАЦИЯ</p>
+                      <p class="e-form-subtitle">Зарегистрируйтесь на нашем сайте и узнайте подробности</p>
+                      <div class="b-input-container">
+                        <input type="text" name="name" required="required" class="b-input"
+                               placeholder="Ваше имя">
+                      </div>
+                      <div class="b-input-container">
+                        <input type="email" name="email" class="b-input" required="required" placeholder="Ваш e-mail">
+                      </div>
+                      <button class="b-button" type="submit">
+                                        <span class="e-button-container">
+                                            <span class="t"><span class="c"><span
+                                                class="e-button-text">отправить</span></span></span>
+                                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="b-second">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h2 class="b-title">как купить под 2% годовых?</h2>
+
+          </div>
+        </div>
+        <ul class="b-text-list row">
+          <li class="e-text-item col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="b-text-block">
+              <h3 class="e-text-title">
+                <span class="e-text-num">1.</span>
+                Членство в кооперативе
+              </h3>
+              <p class="e-text-text">Членом кооператива может быть гражданин, достигший возраста шестнадцати лет. </p>
+              <p class="e-text-text">Для вступления в ЖК необходимо написать заявление и внести вступительный взнос 1000
+                евро по курсу ЦБ.</p>
+            </div>
+          </li>
+          <li class="e-text-item col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="b-text-block">
+              <h3 class="e-text-title">
+                <span class="e-text-num">2.</span>
+                Цена вопроса
+              </h3>
+              <p class="e-text-text">Необходимо накопить либо внести 35% или 50% от ориентировочной стоимости
+                жилья. </p>
+              <p class="e-text-text">Кооператив предлагает индивидуальный график накопления, благодаря которому паевые
+                взносы в размере всего лишь 10 000 рублей позволяют за 3-5 лет накопить 35% стоимости комнаты или
+                квартиры и приобрести их через кооператив.</p>
+            </div>
+          </li>
+          <li class="e-text-item col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="b-text-block">
+              <h3 class="e-text-title">
+                <span class="e-text-num">3.</span>
+                Роль кооператива
+              </h3>
+              <p class="e-text-text">Недостающую сумму денежных средств для приобретения жилья добавит кооператив из
+                своего паевого фонда и приобретёт для пайщика объект недвижимости.</p>
+            </div>
+          </li>
+          <li class="e-text-item col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="b-text-block">
+              <h3 class="e-text-title">
+                <span class="e-text-num">4.</span>
+                Своя жилплощадь
+              </h3>
+              <p class="e-text-text">Приобретенный объект недвижимости передается вам в пользование «вы будете жить в
+                своем доме или квартире».</p>
+            </div>
+          </li>
+          <li class="e-text-item col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="b-text-block">
+              <h3 class="e-text-title">
+                <span class="e-text-num">5.</span>
+                Как это всё работает
+              </h3>
+              <p class="e-text-text">Пайщик осуществляет выплаты согласно графику платежей до полного погашения
+                задолженности перед кооперативом. </p>
+              <p class="e-text-text">После чего объект недвижимости передается пайщику в собственность</p>
+            </div>
+          </li>
+          <li class="e-text-item col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="b-text-block">
+              <h3 class="e-text-title">
+                <span class="e-text-num">6.</span>
+                Как платить
+              </h3>
+              <p class="e-text-text">До приобретения объекта недвижимости в собственность ЖК пайщик вносит ежемесячный
+                паевой взнос 10 000 (десять тысяч) руб и ежемесячный членский взнос в размере 1000 (одна тысяча)
+                руб.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="b-gallery">
+      <div class="container">
+        <div class="b-gallery-container row">
+          <div class="e-gallery-item col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div data-button="1" class="e-gallery-img">
+              <img src="img/ser1.png" alt="">
+            </div>
+          </div>
+          <div class="e-gallery-item col-lg-6 col-md-6 col-sm-6 col-xs-12">
+            <div data-button="2" class="e-gallery-img">
+              <img src="img/ser2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="b-video-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="b-video-container">
+              <iframe width="600" height="349" frameborder="0" allowfullscreen
+                      src="http://www.youtube.com/embed/mZgvDtP2Rns?autohide=1">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="b-contacts">
+      <div class="container">
+        <div class="row">
+          <div class="e-contacts-container col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="e-contacts-content">
+              <div class="e-contacts-text-block">
+                <p class="e-contacts-name">Name Company</p>
+                <a href="tel:88009455424" class="b-phone">8 800 945-54-24</a>
+                <p class="b-phone">Адрес: г. Москва, ул. Ленина, д 12</p>
+                <p class="e-contacts-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                  eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim</p>
+              </div>
+              <div class="e-contact-map">
+                <div id="YMapsID"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer class="b-footer">
+    <div class="container">
+      <div class="row">
+        <div class="e-footer-container col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <ul class="b-footer-text-list">
+            <li class="e-footer-text-item">
+              <a href="#" class="e-footer-link">Name Company</a>
+            </li>
+            <li class="e-footer-text-item">
+              <span class="e-footer-link">All rigsts reserved</span>
+            </li>
+            <li class="e-footer-text-item">
+              <span class="e-footer-link">2016</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>

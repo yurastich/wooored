@@ -73,6 +73,7 @@ p, h1, h2, h3, h4, span, input, img {
   &:hover {
     box-shadow: 0px 0px 29px 0px rgba(168, 0, 102, 0.5);
     color: #fff;
+    background-color: $btn-h;
   }
   &:active {
 
@@ -1188,7 +1189,7 @@ section {
   line-height: 24px;
   font-weight: 400;
   position: fixed;
-  z-index: 5;
+  z-index: 10;
   bottom: -100px;
   left: -500px;
   opacity: 0;
@@ -1226,7 +1227,13 @@ section {
 
 @media (min-width: 1600px) {
   .b-video-container {
-    padding-bottom: 57%;
+    padding-bottom: 56%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .b-video-container {
+    padding-bottom: 56%;
   }
 }
 
@@ -1550,6 +1557,15 @@ section {
     padding: 0 30px;
     font-size: 18px;
     line-height: 20px;
+  }
+  .b-message{
+    width: calc(100% - 20px);
+    font-size: 14px;
+    line-height: 16px;
+    &.active{
+      bottom: 10px;
+      left: 10px;
+    }
   }
   .b-popup {
     .e-popup-text {

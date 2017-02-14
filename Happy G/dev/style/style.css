@@ -532,7 +532,8 @@ p::-moz-selection, h1::-moz-selection, h2::-moz-selection, h3::-moz-selection, h
     position: relative; }
   .b-button:hover {
     box-shadow: 0px 0px 29px 0px rgba(168, 0, 102, 0.5);
-    color: #fff; }
+    color: #fff;
+    background-color: #ff00b0; }
   .b-button.m-100 {
     width: 100%; }
   .b-button.m-button-sm {
@@ -1461,7 +1462,7 @@ section {
   line-height: 24px;
   font-weight: 400;
   position: fixed;
-  z-index: 5;
+  z-index: 10;
   bottom: -100px;
   left: -500px;
   opacity: 0;
@@ -1495,7 +1496,10 @@ section {
 
 @media (min-width: 1600px) {
   .b-video-container {
-    padding-bottom: 57%; } }
+    padding-bottom: 56%; } }
+@media (min-width: 1600px) {
+  .b-video-container {
+    padding-bottom: 56%; } }
 @media (max-width: 1260px) {
   .b-phone-container .e-phone {
     font-size: 30px;
@@ -1749,6 +1753,14 @@ section {
     padding: 0 30px;
     font-size: 18px;
     line-height: 20px; }
+
+  .b-message {
+    width: calc(100% - 20px);
+    font-size: 14px;
+    line-height: 16px; }
+    .b-message.active {
+      bottom: 10px;
+      left: 10px; }
 
   .b-popup .e-popup-text {
     font-size: 18px;

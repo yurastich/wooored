@@ -152,6 +152,7 @@ $(document).ready(function () {
     parallax: true,
     keyboardControl: true,
     speed: 700,
+    loop: true
   });
 
   // numInd = 0;

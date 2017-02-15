@@ -476,6 +476,7 @@ html {
 
 body {
   overflow-x: hidden;
+  overflow-y: visible;
   max-width: 100%;
   width: 100%; }
 
@@ -776,7 +777,7 @@ section {
   0% {
     background-position: 0 0; }
   50% {
-    background-position: 0 -3000px; }
+    background-position: 0 3000px; }
   100% {
     background-position: 0 0; } }
 @keyframes dots {
@@ -839,8 +840,6 @@ section {
   height: 1601px; }
 
 .container-content {
-  overflow-x: hidden;
-  overflow-y: scroll;
   position: relative; }
 
 .b-second {
@@ -1655,6 +1654,9 @@ section {
     font-size: 30px;
     line-height: 35px; }
 
+  .b-anim .e-anim-left, .b-anim .e-anim-right {
+    animation-iteration-count: 0; }
+
   .b-thanks .e-thanks-container {
     height: auto;
     padding: 30px; }
@@ -1694,6 +1696,8 @@ section {
     z-index: 2; }
   .b-second .e-second-container {
     padding-bottom: 0; }
+  .b-second .e-second-right-container {
+    padding: 0; }
 
   .b-popup.m-popup-form {
     width: 100%; }

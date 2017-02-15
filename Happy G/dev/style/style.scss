@@ -12,6 +12,7 @@
 
 body {
   overflow-x: hidden;
+  overflow-y: visible;
   max-width: 100%;
   width: 100%;
 }
@@ -371,7 +372,7 @@ section {
     background-position: 0 0;
   }
   50% {
-    background-position: 0 -3000px;
+    background-position: 0 3000px;
   }
   100% {
     background-position: 0 0;
@@ -459,8 +460,6 @@ section {
 }
 
 .container-content {
-  overflow-x: hidden;
-  overflow-y: scroll;
   position: relative;
 }
 
@@ -1428,6 +1427,11 @@ section {
     font-size: 30px;
     line-height: 35px;
   }
+  .b-anim{
+    .e-anim-left, .e-anim-right {
+      animation-iteration-count: 0;
+    }
+  }
   .b-thanks {
     .e-thanks-container {
       height: auto;
@@ -1479,6 +1483,9 @@ section {
     }
     .e-second-container {
       padding-bottom: 0;
+    }
+    .e-second-right-container{
+      padding: 0;
     }
   }
   .b-popup {
